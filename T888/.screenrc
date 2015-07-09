@@ -1,0 +1,21 @@
+startup_message off
+vbell off
+altscreen on
+defscrollback 4096
+shell /usr/bin/zsh
+
+# Start at screen 1, not 0
+bind c screen 1
+bind ^c screen 1
+bind 0 selsect 10
+screen 1
+
+# window title
+hardstatus string "screen: %-Lw[%n %t]%{-b}%+Lw%1`"
+
+# bind the escape key to C-/
+escape ^_/
+
+# rw screen buffer to X primary
+#bind b eval writebuf 'exec /usr/bin/sh -c "xsel -i -b < /tmp/screen-exchange"' 'exec /usr/bin/sh -c "killall xsel"'
+
