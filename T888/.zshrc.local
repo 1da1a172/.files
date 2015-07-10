@@ -1,16 +1,25 @@
 source /usr/share/doc/pkgfile/command-not-found.zsh
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source ~/lib/ip.zsh
+# load libraries
+function () {
+  typeset lib
+  for lib (~/lib/*.zsh) source ${lib}
+}
+
 bindkey -v
 
 # It is standard to use '$' for a non-root user. Not '%'. C'mon grml...
 grml_prompt_token_default[percent]='$ '
 
 export BROWSER=chromium
-export PATH=$PATH:~/bin
+export PATH=$PATH:~/bin:~/scrap
 export TERMINAL=jp-terminal
 export VISUAL=/usr/bin/vim
 export KEYTIMEOUT=1
+
+alias -s pdf=zathura
+alias -s zsh=vim
+alias -s txt=vim
 
 function ssh() {
   typeset arg=1
