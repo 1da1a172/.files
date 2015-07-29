@@ -20,6 +20,7 @@ alias -s pdf=zathura
 alias -s zsh=vim
 alias -s txt=vim
 
+#TODO: don't log bad sessions
 function ssh() {
   typeset arg=1
   typeset logtmp
