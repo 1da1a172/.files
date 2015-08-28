@@ -5,16 +5,12 @@ function () {
   for lib (~/lib/*.zsh) source ${lib}
 }
 
+# update tty for gpg-agent
+typeset -x +g GPG_TTY="${TTY}"
+gpg-connect-agent updatestartuptty /bye &> /dev/null
+
+# use vi(m) keybindings
 bindkey -v
-
-# It is standard to use '$' for a non-root user. Not '%'. C'mon grml...
-grml_prompt_token_default[percent]='$ '
-
-export BROWSER=chromium
-export PATH=$PATH:~/bin:~/scrap
-export TERMINAL=jp-terminal
-export VISUAL=/usr/bin/vim
-export KEYTIMEOUT=1
 
 alias -s pdf=zathura
 alias -s zsh=vim
