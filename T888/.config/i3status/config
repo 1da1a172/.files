@@ -13,7 +13,6 @@ general {
 
 order += "ipv6"
 order += "wireless wlp3s0"
-order += "wireless wlan0"
 order += "ethernet eth0"
 order += "ethernet ens9"
 order += "ethernet enp13s0"
@@ -26,12 +25,7 @@ order += "battery 0"
 order += "tztime local"
 
 wireless wlp3s0 {
-    format_up = "W: (%quality on %essid, %bitrate) %ip"
-    format_down = ""
-}
-
-wireless wlan0 {
-    format_up = "W: (%quality on %essid, %bitrate) %ip"
+    format_up = "W: %essid (%frequency %bitrate) %ip"
     format_down = ""
 }
 
