@@ -17,12 +17,14 @@ alias -s zsh=vim
 alias -s txt=vim
 
 #TODO: don't log bad sessions
+#TODO: filter color escapes from logs and switch TERM to xterm
 function ssh() {
   typeset arg=1
   typeset logtmp
   typeset logfile
   typeset -r logdir="${HOME}/.ssh/logs"
   typeset -a args
+  typeset -x +g TERM="xtermm"
   args=("$@")
   readonly -a args
 
