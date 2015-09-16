@@ -1,8 +1,7 @@
 syntax on
 set relativenumber
-set expandtab
-set softtabstop=2
-set shiftwidth=2
+autocmd Filetype zsh setlocal expandtab sts=2 sw=2
+autocmd Filetype java setlocal expandtab sts=4 sw=4
 set nowrap
 set encoding=utf-8
 set fileencoding=utf-8
