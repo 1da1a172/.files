@@ -12,6 +12,7 @@ gpg-connect-agent updatestartuptty /bye &> /dev/null
 # use vi(m) keybindings
 bindkey -v
 
+alias programs="cd ~/Dropbox/School/2015Fall/CS1114/programs"
 alias -s pdf=zathura
 alias -s zsh=vim
 alias -s txt=vim
