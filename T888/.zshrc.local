@@ -12,6 +12,10 @@ gpg-connect-agent updatestartuptty /bye &> /dev/null
 # use vi(m) keybindings
 bindkey -v
 
+# It is standard to use '$' for a non-root user. Not '%'. C'mon grml...
+grml_prompt_token_default[percent]='$ '
+
+# aliases
 alias programs="cd ~/Dropbox/School/2015Fall/CS1114/programs"
 alias -s pdf=zathura
 alias -s zsh=vim
