@@ -29,7 +29,7 @@ function ssh() {
   typeset logfile
   typeset -r logdir="${HOME}/.ssh/logs"
   typeset -a args
-  typeset -x +g TERM="xtermm"
+  typeset -x +g TERM="xterm-basic"
   args=("$@")
   readonly -a args
 
