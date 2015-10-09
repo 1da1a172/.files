@@ -21,7 +21,7 @@ roster.resource=false
 roster.offline=true
 
 wrap=true
-time=seconds
+time=%H:%M:%S
 resource.title=true
 resource.message=true
 statuses.console=all
@@ -34,9 +34,10 @@ roster.by=presence
 roster.size=25
 privileges=true
 presence=true
-otr.warn=true
 
 mouse=false
+
+enc.warn=true
 
 [logging]
 chlog=true
