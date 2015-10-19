@@ -25,7 +25,7 @@ order += "battery 0"
 order += "tztime local"
 
 wireless wlp3s0 {
-    format_up = "%essid: (%frequency | %signal | %bitrate) %ip"
+    format_up = "%essid: %ip (%frequency | %signal | %bitrate)"
     format_down = ""
 }
 
