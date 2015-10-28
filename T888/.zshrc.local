@@ -16,10 +16,13 @@ bindkey -v
 grml_prompt_token_default[percent]='$ '
 
 # aliases
-alias programs="cd ~/Dropbox/School/2015Fall/CS1114/programs"
 alias -s pdf=zathura
 alias -s zsh=vim
 alias -s txt=vim
+
+# Deep dirs
+hash -d cs=~/Dropbox/School/2015Fall/CS1114
+hash -d enge=~/Dropbox/School/2015Fall/ENGE1215
 
 #TODO: don't log bad sessions
 #TODO: filter color escapes from logs and switch TERM to xterm
