@@ -1,5 +1,6 @@
 syntax on
 set relativenumber
+set number
 filetype plugin indent on
 set expandtab softtabstop=2 shiftwidth=2
 autocmd Filetype java setlocal expandtab sts=4 sw=4
