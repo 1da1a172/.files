@@ -35,14 +35,12 @@ ethernet enp13s0 {
 }
 
 ethernet enp0s20u1 {
-    # if you use %speed, i3status requires root privileges
-    format_up = "U₁: %ip (%speed)"
+    format_up = "U₁: %ip"
     format_down = ""
 }
 
 ethernet enp0s20u2 {
-    # if you use %speed, i3status requires root privileges
-    format_up = "U₂: %ip (%speed)"
+    format_up = "U₂: %ip"
     format_down = ""
 }
 
