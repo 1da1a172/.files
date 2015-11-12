@@ -30,14 +30,12 @@ hash -d cs=~/Dropbox/School/2015Fall/CS1114
 hash -d enge=~/Dropbox/School/2015Fall/ENGE1215
 
 #TODO: don't log bad sessions
-#TODO: filter color escapes from logs and switch TERM to xterm
 function ssh() {
   typeset arg=1
   typeset logtmp
   typeset logfile
   typeset -r logdir="${HOME}/.ssh/logs"
   typeset -a args
-  typeset -x +g TERM="xterm-basic"
   args=("$@")
   readonly -a args
 
