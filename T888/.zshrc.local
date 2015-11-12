@@ -50,7 +50,7 @@ function ssh() {
   if [[ -n "${logfile}" ]]; then
     readonly logtmp="/tmp/${logfile:t:r}"
     =ssh ${args} | tee >(col -b > "${logtmp}")
-    [[ -s "${logtmp}" ]] && gpg --output "${logfile}" -ear ${USER} "${logtmp}"
+    [[ -s "${logtmp}" ]] && gpg --output "${logfile}" -ea "${logtmp}"
     rm "${logtmp}"
   else
     =ssh ${args}
