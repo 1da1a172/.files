@@ -7,6 +7,7 @@ typeset -x PATH="${PATH}:${HOME}/bin:${HOME}/scrap"
 typeset -x TERMINAL=jp-terminal
 typeset -x VISUAL=/usr/bin/vim
 typeset -x KEYTIMEOUT=1
+typeset -x XDG_HOME="${HOME}/.config"
 
 # Make java look better
 _JAVA_OPTIONS='-Dawt.useSystemAAFontSettings=on'
