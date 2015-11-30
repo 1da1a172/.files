@@ -43,3 +43,7 @@ set smart_wrap = yes
 set query_command = "goobook query %s"
 macro index,pager a "<pipe-message>goobook add<return>" "add sender to Google contacts"
 bind editor <Tab> complete-query
+
+# Views
+auto_view text/calendar text/html
+alternative_order text/calendar text/plain text/html text/*
