@@ -13,26 +13,26 @@ url="http://st.suckless.org"
 source=(http://dl.suckless.org/st/$pkgname-$pkgver.tar.gz
         http://st.suckless.org/patches/st-$pkgver-hidecursor.diff
         config.h)
+sha256sums=('85310c08c3814e099b5e45888f8ac7548640e69e9973e934d4fba38b03737a2b'
+            '170713bdea62e1f2e13f8f540b7cc32d7e9dba7d42cfa7b53ddea719ca888144'
+            '21906a6ddd2f7089581a4a79920ee2cdc4bf76d58a585ed43df886471ba009e7')
+
+prepare() {
+  cd $srcdir/$pkgname-$pkgver
+  # skip terminfo which conflicts with ncurses
+  sed -i '/\@tic /d' Makefile
+  cp $srcdir/config.h config.h
+}
 
 build() {
-  local __patch
   cd $srcdir/$pkgname-$pkgver
-  cp $srcdir/config.h config.h
-  if [ -f $srcdir/*.diff ] ; then
-    cp $srcdir/*.diff .
-    for __patch in "$srcdir/$pkgname-$pkgver/*.diff"; do
-      patch -p1 < ${__patch}
-    done
-  fi
+  patch -p1 < st-$pkgver-hidecursor.diff
   make X11INC=/usr/include/X11 X11LIB=/usr/lib/X11
 }
 
 package() {
   cd $srcdir/$pkgname-$pkgver
   make PREFIX=/usr DESTDIR="$pkgdir" TERMINFO="$pkgdir/usr/share/terminfo" install
-	install -Dm644 LICENSE "$pkgdir/usr/share/licenses/$pkgname/LICENSE"
-	install -Dm644 README "$pkgdir/usr/share/doc/$pkgname/README"
+  install -Dm644 LICENSE "$pkgdir/usr/share/licenses/$pkgname/LICENSE"
+  install -Dm644 README "$pkgdir/usr/share/doc/$pkgname/README"
 }
-sha256sums=('85310c08c3814e099b5e45888f8ac7548640e69e9973e934d4fba38b03737a2b'
-            '170713bdea62e1f2e13f8f540b7cc32d7e9dba7d42cfa7b53ddea719ca888144'
-            '21906a6ddd2f7089581a4a79920ee2cdc4bf76d58a585ed43df886471ba009e7')
