@@ -1,7 +1,7 @@
 # Incoming
 set folder = imaps://imap.gmail.com
 set imap_user = waldrep@vt.edu
-set imap_pass = `pass show gapps/mutt | head -n 1`
+set imap_pass = `pass show isd/gapps/mutt | head -n 1`
 mailboxes imap_check_subscribed
 
 # Outgoing
