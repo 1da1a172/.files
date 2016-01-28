@@ -26,8 +26,7 @@ alias -s zsh=vim
 alias -s txt=vim
 
 # Deep dirs
-hash -d cs=~/Dropbox/School/2015Fall/CS1114
-hash -d enge=~/Dropbox/School/2015Fall/ENGE1215
+hash -d enge=~/Documents/School/ENGE1216
 
 #TODO: don't log bad sessions
 function ssh() {
