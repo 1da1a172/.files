@@ -28,43 +28,6 @@ alias -s txt=vim
 # Deep dirs
 hash -d enge=~/Documents/School/ENGE1216
 
-function docx() {
-  if [[ "$(file -b $1)" == 'Microsoft Word 2007+' ]]; then
-    pandoc -s -f docx -t man $1 | man -l -
-  else
-    echo 'Invalid file.' >&2
-    exit 1
-  fi
-}
-
-#TODO: don't log bad sessions
-function ssh() {
-  typeset arg=1
-  typeset logtmp
-  typeset logfile
-  typeset -r logdir="${HOME}/.ssh/logs"
-  typeset -a args
-  args=("$@")
-  readonly -a args
-
-  while [[ -z "${logfile}" ]] && [[ "${arg}" -le "${#args}" ]]; do
-    case ${args[arg]} in
-      (-[1246AaCfGgKkMNnqsTtVvXxYy]*) (( arg++ )) ;;
-      (-*) (( arg+=2 )) ;;
-      (*) readonly logfile="${logdir}/$(date +%Y%b%d-%T) ${args[arg]}.log.asc" ;;
-    esac
-  done
-
-  if [[ -n "${logfile}" ]]; then
-    readonly logtmp="/tmp/${logfile:t:r}"
-    =ssh ${args} | tee >(col -b > "${logtmp}")
-    [[ -s "${logtmp}" ]] && gpg --output "${logfile}" -ea "${logtmp}"
-    rm "${logtmp}"
-  else
-    =ssh ${args}
-  fi
-}
-
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 ## END OF FILE #################################################################
 # vim:filetype=zsh foldmethod=marker autoindent expandtab shiftwidth=2
