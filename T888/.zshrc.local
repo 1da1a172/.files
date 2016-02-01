@@ -28,6 +28,15 @@ alias -s txt=vim
 # Deep dirs
 hash -d enge=~/Documents/School/ENGE1216
 
+function docx() {
+  if [[ "$(file -b $1)" == 'Microsoft Word 2007+' ]]; then
+    pandoc -s -f docx -t man $1 | man -l -
+  else
+    echo 'Invalid file.' >&2
+    exit 1
+  fi
+}
+
 #TODO: don't log bad sessions
 function ssh() {
   typeset arg=1
