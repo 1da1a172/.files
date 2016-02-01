@@ -45,7 +45,7 @@ maxsize=52428800
 grlog=true
 
 [otr]
-policy=opportunistic
+policy=manual
 
 [chatstates]
 enabled=true
