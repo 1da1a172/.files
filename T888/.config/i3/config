@@ -181,12 +181,16 @@ bindsym XF86AudioRaiseVolume exec "amixer -q sset Master,0 1+ unmute"
 bindsym XF86AudioLowerVolume exec "amixer -q sset Master,0 1- unmute"
 bindsym XF86AudioMute exec "amixer -q sset Master,0 toggle"
 
-# Blacklighting keys
-bindsym XF86MonBrightnessUp exec "xbacklight +10 -steps 10"
-bindsym XF86MonBrightnessDown exec "xbacklight -10 -steps 10"
-bindsym XF86KbdBrightnessUp exec "kbdlight up"
+# eDP1 blacklight keys
+bindsym XF86MonBrightnessUp exec "xbacklight +10 -steps 10"   # Fn + F2
+bindsym XF86MonBrightnessDown exec "xbacklight -10 -steps 10" # Fn + F1
+bindsym Shift+XF86MonBrightnessUp exec "xbacklight -set 100 -steps 10"
+bindsym Shift+XF86MonBrightnessDown exec "xbacklight -set 1 -steps 10"
+
+# Keyboard backlight keys
+bindsym XF86KbdBrightnessUp exec "kbdlight up"     # Fn + F6
+bindsym XF86KbdBrightnessDown exec "kbdlight down" # Fn + F5
 bindsym Shift+XF86KbdBrightnessUp exec "kbdlight max"
-bindsym XF86KbdBrightnessDown exec "kbdlight down"
 bindsym Shift+XF86KbdBrightnessDown exec "kbdlight off"
 
 # resize window (you can also use the mouse for that)
