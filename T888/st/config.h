@@ -7,7 +7,7 @@
  */
 static char font[] = "Anonymous Pro:pixelsize=16:antialias=true:autohint=true";
 static int borderpx = 1;
-static char shell[] = "/usr/bin/sh";
+static char shell[] = "/usr/bin/zsh";
 static char *utmp = NULL;
 static char stty_args[] = "stty raw -echo -iexten echonl";
 

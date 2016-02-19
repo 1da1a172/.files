@@ -15,12 +15,10 @@ source=("http://dl.suckless.org/st/$pkgname-$pkgver.tar.gz"
         'config.h')
 sha256sums=('85310c08c3814e099b5e45888f8ac7548640e69e9973e934d4fba38b03737a2b'
             'f59c797e49a7f6a9942ca95b214d996207cd77eb099c679cf16dca10311b4cfd'
-            '236c652036d24e94d7036602b4c330d41848a2d2b2aebb7ed367203af81758be')
+            '354108d189756927a4a1f232014026b30ee7c384ae38352dc3a6ff17dfb45c24')
 
 prepare() {
   cd $srcdir/$pkgname-$pkgver
-  # skip terminfo which conflicts with ncurses
-  sed -i '/\@tic /d' Makefile
   cp $srcdir/config.h config.h
 }
 
