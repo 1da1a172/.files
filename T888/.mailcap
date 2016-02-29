@@ -3,4 +3,4 @@ text/html; lynx -stdin -dump -force_html; copiousoutput
 text/html; chromium %s
 image/*; sxiv %s
 application/pdf; zathura %s
-application/vnd.openxmlformats-officedocument.wordprocessingml.document; pandoc -s %s -t man | man -l -
+application/vnd.openxmlformats-officedocument.wordprocessingml.document; docx; copiousoutput
