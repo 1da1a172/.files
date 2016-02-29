@@ -19,7 +19,7 @@ font pango:Linux Libertine O 11
 # Startup commands
 exec --no-startup-id connman-notify
 exec --no-startup-id numlockx on
-exec --no-startup-id xautolock -time 5 -locker ~/bin/lock -notify 10 -notifier 'notify-send "Screen will lock in 10 seconds."'
+exec --no-startup-id xautolock -time 5 -locker 'i3lock -f' -notify 10 -notifier 'notify-send "Screen will lock in 10 seconds."'
 exec --no-startup-id nuntius
 exec --no-startup-id syncthing --no-browser
 
