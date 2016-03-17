@@ -42,7 +42,7 @@ bindsym $mod+Shift+q kill
 bindsym $mod+c exec chrome-dmenu
 
 # start dmenu
-bindsym $mod+d exec dmenu_run
+bindsym $mod+d exec bin-dmenu
 
 # change focus
 bindsym $mod+h focus left
