@@ -19,6 +19,8 @@ grml_prompt_token_default[percent]='$ '
 alias wl-mon="echo 1 | sudo tee /proc/brcm_monitor0 > /dev/null"
 alias wl-normal="echo 0 | sudo tee /proc/brcm_monitor0 > /dev/null"
 alias mutt="mutt -F ~/.config/mutt/muttrc"
+alias sdig="dig +noall +answer"
+alias tssh="ssh -t conehead.cns.vt.edu ssh"
 
 # suffix aliases
 alias -s pdf=zathura

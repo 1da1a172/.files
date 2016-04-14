@@ -53,3 +53,4 @@ outtype=true
 
 [connection]
 account=vt
+reconnect=10
