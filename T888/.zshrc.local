@@ -23,7 +23,7 @@ alias sdig="dig +noall +answer"
 alias tssh="ssh -t conehead.cns.vt.edu ssh"
 
 # suffix aliases
-alias -s pdf=zathura
+alias -s pdf="zathura --fork"
 alias -s zsh=vim
 alias -s txt=vim
 
