@@ -29,6 +29,7 @@ alias -s txt=vim
 alias -s m=octave
 
 # Deep dirs
+hash -d scrot=~/Pictures/Screenshots
 hash -d enge=~/Documents/School/ENGE1216
 
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
