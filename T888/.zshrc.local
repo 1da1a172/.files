@@ -26,6 +26,7 @@ alias tssh="ssh -t conehead.cns.vt.edu ssh"
 alias -s pdf="zathura --fork"
 alias -s zsh=vim
 alias -s txt=vim
+alias -s m=octave
 
 # Deep dirs
 hash -d enge=~/Documents/School/ENGE1216
