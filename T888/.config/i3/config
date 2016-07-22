@@ -225,3 +225,5 @@ bar {
         font pango:Anonymous Pro 11
         status_command i3status
 }
+
+# vim:filetype=i3
