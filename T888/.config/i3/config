@@ -120,6 +120,16 @@ workspace 17 output DP1
 workspace 18 output DP1
 workspace 19 output DP1
 workspace 20 output DP1
+#workspace 11 output HDMI2
+#workspace 12 output HDMI2
+#workspace 13 output HDMI2
+#workspace 14 output HDMI2
+#workspace 15 output HDMI2
+#workspace 16 output HDMI2
+#workspace 17 output HDMI2
+#workspace 18 output HDMI2
+#workspace 19 output HDMI2
+#workspace 20 output HDMI2
 
 # switch to workspace
 bindsym $modp+1 workspace number 1
@@ -223,6 +233,7 @@ bindsym $mod+r mode "resize"
 # finds out, if available)
 bar {
         mode hide
+        position top
         font pango:Anonymous Pro 11
         status_command i3status
 }
