@@ -19,7 +19,6 @@ font pango:Linux Libertine 11
 # Startup commands
 exec --no-startup-id connman-notify
 exec --no-startup-id numlockx on
-#exec --no-startup-id xautolock -time 5 -locker 'i3lock -f -c 303030' -notify 10 -notifier 'notify-send "Screen will lock in 10 seconds."'
 exec --no-startup-id nuntius
 exec --no-startup-id syncthing --no-browser
 
@@ -185,7 +184,6 @@ bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcu
 # Various keybindings
 bindsym XF86Tools exec scrot-dmenu  # F13 on mac Keyboard (same location as PrntScrn on real keyboards)"
 bindsym Print exec scrot-dmenu      # Actual printscreen, in case a real keyboard is connected
-#bindsym ctrl+mod1+l exec "xautolock -locknow"
 bindsym ctrl+mod1+l exec i3lock -f -c 303030
 
 # Audio keys
