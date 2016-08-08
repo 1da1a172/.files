@@ -182,8 +182,10 @@ bindsym $mod+Shift+r restart
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
 
 # Various keybindings
-bindsym XF86Tools exec scrot-dmenu  # F13 on mac Keyboard (same location as PrntScrn on real keyboards)"
-bindsym Print exec scrot-dmenu      # Actual printscreen, in case a real keyboard is connected
+# XF86Tools = F13 on mac Keyboard (same location as PrntScrn on real keyboards)
+bindsym XF86Tools exec scrot-dmenu
+# Actual printscreen, in case a real keyboard is connected
+bindsym Print exec scrot-dmenu
 bindsym ctrl+mod1+l exec i3lock -f -c 303030
 
 # Audio keys
@@ -193,7 +195,7 @@ bindsym XF86AudioMute exec "amixer -q sset Master,0 toggle"
 
 # eDP1 blacklight keys
 # XF86MonBrightnessUp = Fn + F2
-# XF86MonBrightnessDown = Fn + F3
+# XF86MonBrightnessDown = Fn + F1
 bindsym XF86MonBrightnessUp exec "xbacklight +10 -steps 10"
 bindsym XF86MonBrightnessDown exec "xbacklight -10 -steps 10"
 bindsym Shift+XF86MonBrightnessUp exec "xbacklight -set 100 -steps 10"
