@@ -20,6 +20,7 @@ alias wl-mon="echo 1 | sudo tee /proc/brcm_monitor0 > /dev/null"
 alias wl-normal="echo 0 | sudo tee /proc/brcm_monitor0 > /dev/null"
 alias mutt="mutt -F ~/.config/mutt/muttrc"
 alias tssh="ssh -q -t -A conehead.cns.vt.edu ssh"
+alias wpa="sudo wpa_supplicant -B -c /etc/wpa_supplicant/interactive.conf -i wlp1s0 && sudo wpa_cli"
 
 # suffix aliases
 alias -s pdf="zathura --fork"
