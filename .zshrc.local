@@ -16,8 +16,6 @@ bindkey -v
 grml_prompt_token_default[percent]='$ '
 
 # aliases
-alias wl-mon="echo 1 | sudo tee /proc/brcm_monitor0 > /dev/null"
-alias wl-normal="echo 0 | sudo tee /proc/brcm_monitor0 > /dev/null"
 alias mutt="mutt -F ~/.config/mutt/muttrc"
 alias tssh="ssh -q -t -A conehead.cns.vt.edu ssh"
 alias sssh="ssh -q -t conehead.cns.vt.edu ssh"
