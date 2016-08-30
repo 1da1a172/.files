@@ -31,7 +31,6 @@ alias -s m=octave
 # Deep dirs
 hash -d scrot=~/Pictures/Screenshots
 
-source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 ## END OF FILE #################################################################
 # vim:filetype=zsh foldmethod=marker autoindent expandtab shiftwidth=2
 #
