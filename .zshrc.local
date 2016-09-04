@@ -15,6 +15,7 @@ bindkey -v
 grml_prompt_token_default[percent]='$ '
 
 # aliases
+alias startx="exec startx"
 alias mutt="mutt -F ~/.config/mutt/muttrc"
 alias tssh="ssh -q -t -A conehead.cns.vt.edu ssh"
 alias sssh="ssh -q -t conehead.cns.vt.edu ssh"
