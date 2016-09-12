@@ -17,7 +17,6 @@ grml_prompt_token_default[percent]='$ '
 # aliases
 alias startx="exec startx"
 alias mutt="mutt -F ~/.config/mutt/muttrc"
-alias jssh="ssh -q -J conehead.cns.vt.edu"
 
 # suffix aliases
 alias -s pdf="zathura --fork"
