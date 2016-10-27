@@ -1,9 +1,11 @@
 [notifications]
 message=true
 message.text=true
-room=mention
+room=false
 remind=60
 invite=true
+
+room.mention=true
 
 [ui]
 splash=false
@@ -21,7 +23,6 @@ roster.resource=false
 roster.offline=true
 
 wrap=true
-time=%H:%M:%S
 resource.title=true
 resource.message=true
 statuses.console=all
@@ -39,6 +40,15 @@ mouse=false
 
 enc.warn=true
 
+time.console=%H:%M:%S
+time.chat=%H:%M:%S
+time.muc=%H:%M:%S
+time.mucconfig=%H:%M:%S
+time.private=%H:%M:%S
+time.xmlconsole=%H:%M:%S
+
+tls.show=true
+
 [logging]
 chlog=true
 maxsize=52428800
@@ -54,3 +64,4 @@ outtype=true
 [connection]
 account=vt
 reconnect=10
+tls.certpath=/etc/ssl/certs
