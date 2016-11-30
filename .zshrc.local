@@ -25,7 +25,7 @@ alias -s txt=vim
 alias -s m=octave
 
 # Deep dirs
-hash -d scrot=~/Pictures/Screenshots
+hash -d scrot=~/pictures/screenshots
 
 ## END OF FILE #################################################################
 # vim:filetype=zsh foldmethod=marker autoindent expandtab shiftwidth=2
