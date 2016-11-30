@@ -8,6 +8,7 @@ typeset -x TERMINAL=jp-terminal
 typeset -x VISUAL=/usr/bin/vim
 typeset -x KEYTIMEOUT=1
 typeset -x XDG_HOME="${HOME}/.config"
+typeset -x GPG_TTY="${TTY}"
 
 # Make java look better
 _JAVA_OPTIONS='-Dawt.useSystemAAFontSettings=on'
