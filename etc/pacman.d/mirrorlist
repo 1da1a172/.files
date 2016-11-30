@@ -1,22 +1,19 @@
-Server = http://mirror.cc.vt.edu/pub2/arch/$repo/os/$arch
-Server = https://lug.mtu.edu/archlinux/$repo/os/$arch
-Server = https://arch.localmsp.org/arch/$repo/os/$arch
-Server = https://mirror.lty.me/archlinux/$repo/os/$arch
+#
+# Arch Linux repository mirrorlist
+# Sorted by mirror score from mirror status page
+# Generated on 2016-11-30
+#
+
+# Local VT mirror
+Server = http://mirror.cc.vt.edu/pub/arch/$repo/os/$arch
+# Score: 1.1, United States
+Server = https://mirrors.lug.mtu.edu/archlinux/$repo/os/$arch
+# Score: 1.2, United States
 Server = https://mirrors.kernel.org/archlinux/$repo/os/$arch
-Server = https://www.mailtunnel.eu/archlinux/$repo/os/$arch
-Server = https://arch.jensgutermuth.de/$repo/os/$arch
-Server = https://ftp.heanet.ie/mirrors/ftp.archlinux.org/$repo/os/$arch
-Server = https://mirror.fluxent.de/archlinux/$repo/os/$arch
-Server = https://mirror.pseudoform.org/$repo/os/$arch
-Server = https://ftp.fau.de/archlinux/$repo/os/$arch
-Server = https://archlinux.my-universe.com/$repo/os/$arch
-Server = https://mirror.fs.cx/archlinux/$repo/os/$arch
-Server = https://archlinux.honkgong.info/$repo/os/$arch
-Server = https://mirror.js-webcoding.de/pub/archlinux/$repo/os/$arch
-Server = https://ftp.lysator.liu.se/pub/archlinux/$repo/os/$arch
-Server = https://mirror.i3d.net/pub/archlinux/$repo/os/$arch
-Server = https://archlinux.mirror.pkern.at/$repo/os/$arch
-Server = https://k42.ch/mirror/archlinux/$repo/os/$arch
-Server = https://pkg.adfinis-sygroup.ch/archlinux/$repo/os/$arch
-Server = https://mirror.system.is/arch/$repo/os/$arch
-Server = https://mirrors.ustc.edu.cn/archlinux/$repo/os/$arch
+# Score: 1.8, United States
+Server = https://mirrors.tuxns.net/archlinux/$repo/os/$arch
+# Score: 1.8, United States
+Server = https://mirror.lty.me/archlinux/$repo/os/$arch
+# Score: 2.8, United States
+Server = https://mirrors.ocf.berkeley.edu/archlinux/$repo/os/$arch
+
