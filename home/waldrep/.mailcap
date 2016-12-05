@@ -1,0 +1,6 @@
+text/calendar; ~/.config/mutt/vcalendar-filter; copiousoutput
+text/html; lynx -stdin -dump -force_html; copiousoutput
+text/html; chromium %s
+image/*; sxiv %s
+application/pdf; zathura %s
+application/vnd.openxmlformats-officedocument.wordprocessingml.document; docx %s
