@@ -1,5 +1,0 @@
-set guioptions ''
-set recolor-darkcolor  "#dcdcdc"
-set recolor-lightcolor "#303030"
-set recolor-keephue true
-set recolor true
