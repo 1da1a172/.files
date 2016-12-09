@@ -231,7 +231,7 @@ bindsym $mod+r mode "resize"
 # finds out, if available)
 bar {
         #mode hide
-        font pango:Anonymous Pro 11
+        font pango:Anonymous Pro, FontAwesome 11
         status_command i3status
 }
 
