@@ -33,13 +33,15 @@ floating_modifier $mod
 bindsym $mod+Return exec i3-sensible-terminal
 
 # start a browser
-bindsym $mod+space exec $BROWSER
+bindsym $mod+space exec /usr/bin/chromium --profile-directory='Default'
+bindsym $mod+Shift+space exec /usr/bin/chromium --profile-directory='Profile 2'
 
 # kill focused window
 bindsym $mod+Shift+q kill
 
 # start dmenu for chrome apps
 bindsym $mod+c exec chrome-dmenu
+bindsym $mod+$modp+c exec chrome-dmenu 'Profile 2'
 
 # start dmenu
 bindsym $mod+d exec bin-dmenu
