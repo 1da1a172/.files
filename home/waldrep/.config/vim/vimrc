@@ -1,3 +1,5 @@
+set runtimepath=~/.config/vim,/usr/share/vim/vimfiles,/usr/share/vim/vim80,/usr/share/vim/vimfiles/after,~/${XDG_CONFIG_HOME}vim/after
+set viminfo+=n~/.config/vim/viminfo
 syntax on
 set relativenumber
 set number
@@ -14,4 +16,4 @@ set pastetoggle=<F2>
 set grepprg=grep\ -nH\ $*
 let g:tex_flavor = "latex"
 " verify next one is necessary
-set runtimepath=~/.vim,$VIM/vimfiles,$VIMRUNTIME,$VIM/vimfiles/after,~/.vim/after
+" set runtimepath=~/.config/vim,$VIM/vimfiles,$VIMRUNTIME,$VIM/vimfiles/after,~/.config/vim/after
