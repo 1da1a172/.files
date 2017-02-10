@@ -9,6 +9,7 @@ typeset -x VISUAL=/usr/bin/vim
 typeset -x KEYTIMEOUT=1
 typeset -x XDG_HOME="${HOME}/.config"
 typeset -x GPG_TTY="${TTY}"
+typeset -x DOT_SAGE="${XDG_HOME}/sage"
 
 # Make java look better
 _JAVA_OPTIONS='-Dawt.useSystemAAFontSettings=on'
