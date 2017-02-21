@@ -188,6 +188,7 @@ bindsym XF86Tools exec scrot-dmenu
 # Actual printscreen, in case a real keyboard is connected
 bindsym Print exec scrot-dmenu
 bindsym ctrl+mod1+l exec i3lock -f -c 303030
+bindsym XF86Eject exec i3lock -f -c 303030
 
 # Audio keys
 bindsym XF86AudioRaiseVolume exec "amixer -q sset Master,0 1+ unmute"
