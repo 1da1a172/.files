@@ -191,9 +191,9 @@ bindsym ctrl+mod1+l exec i3lock -f -c 303030
 bindsym XF86Eject exec i3lock -f -c 303030
 
 # Audio keys
-bindsym XF86AudioRaiseVolume exec "amixer -q sset Master,0 1+ unmute"
-bindsym XF86AudioLowerVolume exec "amixer -q sset Master,0 1- unmute"
-bindsym XF86AudioMute exec "amixer -q sset Master,0 toggle"
+bindsym XF86AudioRaiseVolume exec "pamixer -i 1"
+bindsym XF86AudioLowerVolume exec "pamixer -d 1"
+bindsym XF86AudioMute exec "pamixer -t"
 
 # eDP1 blacklight keys
 # XF86MonBrightnessUp = Fn + F2
