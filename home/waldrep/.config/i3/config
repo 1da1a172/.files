@@ -26,6 +26,10 @@ new_float pixel 1
 bindsym $mod+i border pixel 1
 bindsym $mod+Shift+i border normal
 
+# Fix for non-floaty windows that should be
+## gpg 'insert card x' window
+for_window [class="Pinentry" instance="pinentry"] floating enable
+
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
