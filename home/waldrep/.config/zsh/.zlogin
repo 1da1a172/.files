@@ -4,7 +4,7 @@ typeset -x SSH_AUTH_SOCK="/run/user/${UID}/gnupg/S.gpg-agent.ssh"
 ## Environment variables
 # paths
 typeset -x XDG_CONFIG_HOME="${HOME}/.config"
-typeset -x PATH="${PATH}:${HOME}/bin:${HOME}/scrap"
+typeset -x PATH="${HOME}/bin:${HOME}/scrap:${PATH}"
 
 # default apps
 typeset -x BROWSER=chromium
