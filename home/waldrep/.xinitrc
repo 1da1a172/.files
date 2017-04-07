@@ -13,4 +13,5 @@ fi
 
 [[ -f ~/.Xresources ]] && xrdb -merge ~/.Xresources
 exec setxkbmap -option caps:escape &
+exec unclutter -b &
 exec /usr/bin/i3
