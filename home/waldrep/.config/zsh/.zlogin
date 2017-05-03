@@ -12,8 +12,11 @@ typeset -x BROWSER=chromium
 typeset -x TERMINAL=jp-terminal
 typeset -x VISUAL=/usr/bin/vim
 
-# make apps use XDG_CONFIG_HOME
+# make apps use XDG_DATA_HOME
 typeset -x GNUPGHOME="${XDG_DATA_HOME}/gnupg"
+typeset -x PASSWORD_STORE_DIR="${XDG_DATA_HOME}/password-store"
+
+# make apps use XDG_CONFIG_HOME
 typeset -x DOT_SAGE="${XDG_CONFIG_HOME}/sage"
 typeset -x GIMP2_DIRECTORY="${XDG_CONFIG_HOME}/gimp"
 typeset -x VIMINIT='let $MYVIMRC="$XDG_CONFIG_HOME/vim/vimrc" | source $MYVIMRC'
