@@ -1,5 +1,5 @@
 # use gpg-agent for ssh authentication
-typeset -x SSH_AUTH_SOCK="/run/user/${UID}/gnupg/S.gpg-agent.ssh"
+typeset -x SSH_AUTH_SOCK="$(gpgconf --list-dirs agent-ssh-socket)"
 
 ## Environment variables
 # paths
