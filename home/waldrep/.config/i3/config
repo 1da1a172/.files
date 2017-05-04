@@ -40,7 +40,7 @@ bindsym Ctrl+$mod+Return exec st-app
 
 # start a browser
 bindsym $mod+space exec /usr/bin/chromium --profile-directory='Profile 1'
-bindsym $mod+Shift+space exec /usr/bin/chromium --profile-directory='Default'
+bindsym $mod+Shift+space exec /usr/bin/chromium --profile-directory='Profile 2'
 
 # kill focused window
 bindsym $mod+Shift+q kill
