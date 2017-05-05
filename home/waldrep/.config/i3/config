@@ -195,14 +195,6 @@ bindsym XF86MonBrightnessDown exec "xbacklight -10 -steps 10"
 bindsym Shift+XF86MonBrightnessUp exec "xbacklight -set 100 -steps 10"
 bindsym Shift+XF86MonBrightnessDown exec "xbacklight -set 1 -steps 10"
 
-# Keyboard backlight keys
-# XF86KbdBrightnessUp = Fn + F6
-# XF86KbdBrightnessDown = Fn + F5
-bindsym XF86KbdBrightnessUp exec "kbdlight up"
-bindsym XF86KbdBrightnessDown exec "kbdlight down"
-bindsym Shift+XF86KbdBrightnessUp exec "kbdlight max"
-bindsym Shift+XF86KbdBrightnessDown exec "kbdlight off"
-
 # resize window (you can also use the mouse for that)
 # These bindings trigger as soon as you enter the resize mode
 mode "resize" {
