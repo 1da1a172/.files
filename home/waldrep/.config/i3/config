@@ -9,8 +9,13 @@
 #
 # Please see http://i3wm.org/docs/userguide.html for a complete reference!
 
+# Set mod and mod prime
 set $mod mod1
 set $modp mod4
+
+#Set internal/external display
+set $id eDP1
+set $ed HDMI1
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
@@ -106,26 +111,26 @@ bindsym $mod+a focus parent
 bindsym $mod+z focus child
 
 # bind workspace to screen
-workspace 1 output HDMI-1
-workspace 2 output HDMI-1
-workspace 3 output HDMI-1
-workspace 4 output HDMI-1
-workspace 5 output HDMI-1
-workspace 6 output HDMI-1
-workspace 7 output HDMI-1
-workspace 8 output HDMI-1
-workspace 9 output HDMI-1
-workspace 10 output HDMI-1
-workspace 11 output eDP-1
-workspace 12 output eDP-1
-workspace 13 output eDP-1
-workspace 14 output eDP-1
-workspace 15 output eDP-1
-workspace 16 output eDP-1
-workspace 17 output eDP-1
-workspace 18 output eDP-1
-workspace 19 output eDP-1
-workspace 20 output eDP-1
+workspace 1 output $ed
+workspace 2 output $ed
+workspace 3 output $ed
+workspace 4 output $ed
+workspace 5 output $ed
+workspace 6 output $ed
+workspace 7 output $ed
+workspace 8 output $ed
+workspace 9 output $ed
+workspace 10 output $ed
+workspace 11 output $id
+workspace 12 output $id
+workspace 13 output $id
+workspace 14 output $id
+workspace 15 output $id
+workspace 16 output $id
+workspace 17 output $id
+workspace 18 output $id
+workspace 19 output $id
+workspace 20 output $id
 
 # switch to workspace
 bindsym $mod+1 workspace number 1
