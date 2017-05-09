@@ -35,6 +35,10 @@ bindsym $mod+Shift+i border normal
 ## gpg 'insert card x' window
 for_window [class="Pinentry" instance="pinentry"] floating enable
 
+# Fix for floaty windows that should tile
+## chromium apps (notably hangouts)
+for_window [window_role="app" class="Chromium"] floating disable
+
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
