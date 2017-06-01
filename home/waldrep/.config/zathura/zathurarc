@@ -1,3 +1,4 @@
+set font "monospace normal 20"
 set guioptions ''
 set recolor-darkcolor  "#dcdcdc"
 set recolor-lightcolor "#303030"
