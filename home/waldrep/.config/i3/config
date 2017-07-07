@@ -18,6 +18,7 @@ set $id eDP1
 set $ed HDMI1
 
 # Set chrome profiles
+set $browser 'chromium'
 set $spartan074 'Profile 1'
 set $waldrep 'Profile 2'
 
@@ -51,8 +52,8 @@ bindsym $mod+Shift+Return exec st-attach
 bindsym Ctrl+$mod+Return exec st-app
 
 # start a browser
-bindsym $mod+space exec /usr/bin/chromium --profile-directory=$spartan074
-bindsym $mod+Shift+space exec /usr/bin/chromium --profile-directory=$waldrep
+bindsym $mod+space exec $browser --profile-directory=$spartan074
+bindsym $mod+Shift+space exec $browser --profile-directory=$waldrep
 
 # kill focused window
 bindsym $mod+Shift+q kill
