@@ -162,6 +162,9 @@ bindsym $modp+8 workspace number 18
 bindsym $modp+9 workspace number 19
 bindsym $modp+0 workspace number 20
 
+# always start on correct workspace
+exec --no-startup-id "i3-msg 'workspace 1'"
+
 # move focused container to workspace
 bindsym $mod+Shift+1 move container to workspace number 1
 bindsym $mod+Shift+2 move container to workspace number 2
