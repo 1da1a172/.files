@@ -14,20 +14,14 @@ bindkey -v
 # It is standard to use '$' for a non-root user. Not '%'. C'mon grml...
 grml_prompt_token_default[percent]='$ '
 
-# aliases
-alias startx="exec startx"
-alias mutt="mutt -F ~/.config/mutt/muttrc"
-
 # suffix aliases
 alias -s pdf="zathura --fork"
 alias -s zsh=vim
 alias -s txt=vim
-alias -s m=octave
 
 # Deep dirs
 hash -d scrot=~/pictures/screenshots
 hash -d .home=~/.files/home/waldrep
-hash -d mth=~/documents/school/math2204
 
 ## END OF FILE #################################################################
 # vim:filetype=zsh foldmethod=marker autoindent expandtab shiftwidth=2
