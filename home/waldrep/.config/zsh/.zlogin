@@ -11,6 +11,7 @@ typeset -x PATH="${HOME}/bin:${HOME}/scrap:${PATH}"
 typeset -x BROWSER=chromium
 typeset -x TERMINAL=jp-terminal
 typeset -x VISUAL=/usr/bin/vim
+typeset -x GIT_SSH=/usr/bin/ssh
 
 # make apps use XDG_DATA_HOME
 typeset -x GNUPGHOME="${XDG_DATA_HOME}/gnupg"
