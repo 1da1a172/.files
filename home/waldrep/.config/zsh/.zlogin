@@ -27,12 +27,9 @@ typeset -x LESSKEY="${XDG_CONFIG_HOME}/less/keys"
 
 # make java usable
 # See https://wiki.archlinux.org/index.php/Java_Runtime_Environment_fonts
-typeset -x _JAVA_OPTIONS='-Dother.options=true'
-_JAVA_OPTIONS+=' -Dswing.defaultlaf=com.sun.java.swing.plaf.gtk.GTKLookAndFeel'
-_JAVA_OPTIONS+=' -Djdk.gtk.version=3'
-_JAVA_options+=' -Dawt.useSystemAAFontSettings=gasp'
+typeset -x _JAVA_OPTIONS='-Dawt.useSystemAAFontSettings=lcd -Dawt.autoScale=quarter'
 typeset -x JAVA_FONTS='/usr/share/fonts/TTF'
-typeset -x FT2_SUBPIXEL_HINTING=2
+typeset -x FT2_SUBPIXEL_HINTING=1
 
 # misc
 typeset -x KEYTIMEOUT=1
