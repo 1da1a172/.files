@@ -1,4 +1,4 @@
-set runtimepath=~/.config/vim,/usr/share/vim/vimfiles,/usr/share/vim/vim80,/usr/share/vim/vimfiles/after,~/${XDG_CONFIG_HOME}vim/after
+set runtimepath=~/.config/vim,/usr/share/vim/vimfiles,/usr/share/vim/vim81,/usr/share/vim/vimfiles/after,~/${XDG_CONFIG_HOME}vim/after
 set viminfo+=n~/.config/vim/viminfo
 syntax on
 set relativenumber
