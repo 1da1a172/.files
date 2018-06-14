@@ -3,6 +3,8 @@ function () {
   typeset lib
   for lib (~/lib/*.zsh) source ${lib}
 }
+# and fast-syntax-highlighting
+source /usr/share/zsh/plugins/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh
 
 # update tty for gpg-agent
 typeset -x +g GPG_TTY="${TTY}"
