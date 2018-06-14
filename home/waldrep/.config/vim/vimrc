@@ -11,6 +11,7 @@ set nowrap
 set encoding=utf-8
 set fileencoding=utf-8
 colorscheme ir_black
+hi Folded ctermfg=Grey
 set pastetoggle=<F2>
 " additional latexsuite stuff
 set grepprg=grep\ -nH\ $*
