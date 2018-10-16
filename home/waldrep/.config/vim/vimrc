@@ -1,5 +1,6 @@
 set runtimepath=~/.config/vim,$VIM/vimfiles,$VIMRUNTIME,$VIM/vimfiles/after,~/${XDG_CONFIG_HOME}vim/after
 set viminfo+=n~/.config/vim/viminfo
+set viewdir=$VIMDOTDIR/views
 syntax on
 set relativenumber
 set number
