@@ -20,3 +20,10 @@ set pastetoggle=<F2>
 set grepprg=grep\ -nH\ $*
 let g:tex_flavor = "latex"
 set title
+
+"xml folding
+augroup XML
+  let g:xml_syntax_folding=1
+  autocmd!
+  autocmd FileType xml setlocal foldmethod=syntax foldlevelstart=999 foldminlines=0
+augroup END
