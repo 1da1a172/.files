@@ -27,3 +27,8 @@ augroup XML
   autocmd!
   autocmd FileType xml setlocal foldmethod=syntax foldlevelstart=999 foldminlines=0
 augroup END
+
+" highlight trailing whitespace
+highlight ExtraWhitespace ctermbg=red
+match ExtraWhitespace /\s\+$/
+"
