@@ -5,7 +5,8 @@ typeset -x SSH_AUTH_SOCK="$(gpgconf --list-dirs agent-ssh-socket)"
 # paths
 typeset -x XDG_CONFIG_HOME="${HOME}/.config"
 typeset -x XDG_DATA_HOME="${HOME}/.local/share"
-typeset -x PATH="${HOME}/bin:${HOME}/scrap:${PATH}"
+typeset -x GOPATH="${HOME}/build/go"
+typeset -x PATH="${HOME}/bin:${HOME}/scrap:${PATH}:${GOPATH}/bin"
 
 # default apps
 typeset -x BROWSER=chromium
