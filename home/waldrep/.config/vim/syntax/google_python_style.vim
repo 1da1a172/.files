@@ -1,4 +1,5 @@
 " Indent Python in the Google way.
+" https://github.com/google/styleguide/blob/gh-pages/google_python_style.vim
 
 setlocal indentexpr=GetGooglePythonIndent(v:lnum)
 
