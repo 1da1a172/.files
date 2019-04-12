@@ -5,6 +5,7 @@ typeset -x SSH_AUTH_SOCK="$(gpgconf --list-dirs agent-ssh-socket)"
 # paths
 typeset -x XDG_CONFIG_HOME="${HOME}/.config"
 typeset -x XDG_DATA_HOME="${HOME}/.local/share"
+[[ -d /dev/shm && -w /dev/shm && -x /dev/shm ]] && typeset -x TMPDIR='/dev/shm'
 typeset -x USER_LIB="${HOME}/.local/lib"
 typeset -x USER_BIN="${HOME}/.local/bin"
 typeset -x GOPATH="${HOME}/build/go"
