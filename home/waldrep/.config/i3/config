@@ -27,9 +27,9 @@ set $disp2 DP2-2
 #set $disp2 HDMI1
 
 # Set browser profiles
-set $browser 'firefox'
-set $spartan074 "$HOME/.mozilla/firefox/spartan074@gmail.com"
-set $waldrep "$HOME/.mozilla/firefox/c4bp8a4b.default"
+set $browser 'chromium'
+set $spartan074 '--profile-directory=Profile 1'
+set $waldrep '--profile-directory=Profile 2'
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
@@ -62,8 +62,8 @@ bindsym $mod+Shift+Return exec st-attach
 bindsym Ctrl+$mod+Return exec st-app
 
 # start a browser
-bindsym $mod+space exec $browser --profile $spartan074
-bindsym $modp+space exec $browser --no-remote --profile $waldrep
+bindsym $mod+space exec $browser $spartan074
+bindsym $modp+space exec $browser $waldrep
 
 # kill focused window
 bindsym $mod+Shift+q kill
