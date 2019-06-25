@@ -21,9 +21,10 @@ set $mod mod1
 set $modp mod4
 
 #Set primary/secondary display
-#set $disp1 DP1
-set $disp1 DP1
-set $disp2 eDP1
+set $disp1 DP1-2
+set $disp2 DP2-2
+#set $disp1 eDP1
+#set $disp2 HDMI1
 
 # Set browser profiles
 set $browser 'firefox'
