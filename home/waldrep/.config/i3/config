@@ -64,6 +64,7 @@ bindsym Ctrl+$mod+Return exec st-app
 # start a browser
 bindsym $mod+space exec $browser $spartan074
 bindsym $modp+space exec $browser $waldrep
+bindsym $mod+q exec qutebrowser
 
 # kill focused window
 bindsym $mod+Shift+q kill
