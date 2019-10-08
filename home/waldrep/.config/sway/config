@@ -1,0 +1,233 @@
+# Read `man 5 sway` for a complete reference.
+
+### Variables
+#
+# Mod keys
+set $mod Mod1
+set $modp Mod4
+# Home row direction keys, like vim
+set $left h
+set $down j
+set $up k
+set $right l
+# Default apps
+set $term jp-terminal
+set $menu dmenu_path | dmenu | xargs swaymsg exec --
+set $browser chromium
+# browser profiles
+set $spartan074 '--profile-directory=Profile 1'
+set $waldrep '--profile-directory=Profile 2'
+
+### Window decoration
+default_border pixel 1
+default_floating_border pixel 1
+
+### Output configuration
+#
+# man 5 sway-output
+# Monitor setup
+output 'Sharp Corporation 0x1476 0x00000000' position 0,0
+output 'Dell Inc. DELL P2715Q X24K1737773L' position 3840,0
+output 'Dell Inc. DELL P2415Q G3D7F8BM03LB' position 7680,0 transform 270
+# backround
+output * bg '#000000' solid_color
+
+### Input configuration
+#
+# man 5 sway-input
+# Keyboard
+input "1:1:AT_Translated_Set_2_keyboard" {
+    xkb_options caps:escape
+}
+# Touchpad
+input "1739:31251:DLL07BF:01_06CB:7A13_Touchpad" {
+    tap enabled
+    dwt enabled
+    tap_button_map lmr
+}
+
+### Key bindings
+#
+# Basics:
+#
+# Launching stuff
+    # terminal
+    bindsym $mod+Return exec $term
+    bindsym $mod+Shift+Return exec st-attach
+    bindsym Ctrl+$mod+Return exec st-app
+
+    # personal browser
+    bindsym $mod+space exec $browser $spartan074
+
+    # work browser
+    bindsym $modp+space exec $browser $waldrep
+
+    # lock screen
+    bindsym Ctrl+$mod+l exec swaylock -e -c 303030
+
+    # password manager
+    # bindsym $mod+p exec passmenu
+
+# other
+    # kill focused window
+    bindsym $mod+Shift+q kill
+
+    # start your launcher
+    bindsym $mod+d exec $menu
+
+    # Drag floating windows by holding down $mod and left mouse button.
+    # Resize them with right mouse button + $mod.
+    # Despite the name, also works for non-floating windows.
+    # Change normal to inverse to use left mouse button for resizing and right
+    # mouse button for dragging.
+    floating_modifier $mod normal
+
+    # reload the configuration file
+    bindsym $mod+Shift+c reload
+#
+# Moving around:
+#
+    # Move your focus around
+    bindsym $mod+$left focus left
+    bindsym $mod+$down focus down
+    bindsym $mod+$up focus up
+    bindsym $mod+$right focus right
+    # or use $mod+[up|down|left|right]
+    bindsym $mod+Left focus left
+    bindsym $mod+Down focus down
+    bindsym $mod+Up focus up
+    bindsym $mod+Right focus right
+
+    # _move_ the focused window with the same, but add Shift
+    bindsym $mod+Shift+$left move left
+    bindsym $mod+Shift+$down move down
+    bindsym $mod+Shift+$up move up
+    bindsym $mod+Shift+$right move right
+    # ditto, with arrow keys
+    bindsym $mod+Shift+Left move left
+    bindsym $mod+Shift+Down move down
+    bindsym $mod+Shift+Up move up
+    bindsym $mod+Shift+Right move right
+#
+# Workspaces:
+#
+    # switch to workspace
+    bindsym $mod+1 workspace 1
+    bindsym $mod+2 workspace 2
+    bindsym $mod+3 workspace 3
+    bindsym $mod+4 workspace 4
+    bindsym $mod+5 workspace 5
+    bindsym $mod+6 workspace 6
+    bindsym $mod+7 workspace 7
+    bindsym $mod+8 workspace 8
+    bindsym $mod+9 workspace 9
+    bindsym $mod+0 workspace 10
+    bindsym $modp+1 workspace 11
+    bindsym $modp+2 workspace 12
+    bindsym $modp+3 workspace 13
+    bindsym $modp+4 workspace 14
+    bindsym $modp+5 workspace 15
+    bindsym $modp+6 workspace 16
+    bindsym $modp+7 workspace 17
+    bindsym $modp+8 workspace 18
+    bindsym $modp+9 workspace 19
+    bindsym $modp+0 workspace 20
+    # move focused container to workspace
+    bindsym $mod+Shift+1 move container to workspace 1
+    bindsym $mod+Shift+2 move container to workspace 2
+    bindsym $mod+Shift+3 move container to workspace 3
+    bindsym $mod+Shift+4 move container to workspace 4
+    bindsym $mod+Shift+5 move container to workspace 5
+    bindsym $mod+Shift+6 move container to workspace 6
+    bindsym $mod+Shift+7 move container to workspace 7
+    bindsym $mod+Shift+8 move container to workspace 8
+    bindsym $mod+Shift+9 move container to workspace 9
+    bindsym $mod+Shift+0 move container to workspace 10
+    bindsym $modp+Shift+1 move container to workspace 11
+    bindsym $modp+Shift+2 move container to workspace 12
+    bindsym $modp+Shift+3 move container to workspace 13
+    bindsym $modp+Shift+4 move container to workspace 14
+    bindsym $modp+Shift+5 move container to workspace 15
+    bindsym $modp+Shift+6 move container to workspace 16
+    bindsym $modp+Shift+7 move container to workspace 17
+    bindsym $modp+Shift+8 move container to workspace 18
+    bindsym $modp+Shift+9 move container to workspace 19
+    bindsym $modp+Shift+0 move container to workspace 20
+#
+# Layout stuff:
+#
+    # You can "split" the current object of your focus with
+    # $mod+b or $mod+v, for horizontal and vertical splits
+    # respectively.
+    bindsym $mod+b splith
+    bindsym $mod+v splitv
+
+    # Switch the current container between different layout styles
+    bindsym $mod+s layout stacking
+    bindsym $mod+w layout tabbed
+    bindsym $mod+e layout toggle split
+
+    # Make the current focus fullscreen
+    bindsym $mod+f fullscreen
+
+    # Toggle the current focus between tiling and floating mode
+    bindsym $mod+Shift+x floating toggle
+
+    # Swap focus between the tiling area and the floating area
+    bindsym $mod+x focus mode_toggle
+
+    # move focus to the parent container
+    bindsym $mod+a focus parent
+    bindsym $mod+z focus child
+#
+# Scratchpad:
+#
+    # Sway has a "scratchpad", which is a bag of holding for windows.
+    # You can send windows there and get them back later.
+
+    # Move the currently focused window to the scratchpad
+    bindsym $mod+Shift+minus move scratchpad
+
+    # Show the next scratchpad window or hide the focused scratchpad window.
+    # If there are multiple scratchpad windows, this command cycles through them.
+    bindsym $mod+minus scratchpad show
+#
+# Resizing containers:
+#
+mode "resize" {
+    # left will shrink the containers width
+    # right will grow the containers width
+    # up will shrink the containers height
+    # down will grow the containers height
+    bindsym $left resize shrink width 10 px or 10 ppt
+    bindsym $down resize grow height 10 px or 10 ppt
+    bindsym $up resize shrink height 10 px or 10 ppt
+    bindsym $right resize grow width 10 px or 10 ppt
+
+    # ditto, with arrow keys
+    bindsym Left resize shrink width 10 px or 10 ppt
+    bindsym Down resize grow height 10 px or 10 ppt
+    bindsym Up resize shrink height 10 px or 10 ppt
+    bindsym Right resize grow width 10 px or 10 ppt
+
+    # return to default mode
+    bindsym Return mode "default"
+    bindsym Escape mode "default"
+}
+bindsym $mod+r mode "resize"
+
+#
+# Status Bar:
+#
+# Read `man 5 sway-bar` for more information about this section.
+bar {
+    position bottom
+    status_command while date -R; do sleep 1; done
+    colors {
+        statusline #ffffff
+        background #181818
+        inactive_workspace #32323200 #32323200 #5c5c5c
+    }
+}
+
+include /etc/sway/config.d/*
