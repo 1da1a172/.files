@@ -2,7 +2,7 @@
 function () {
   typeset lib
   for lib (${HOME}/.local/lib/*.zsh) source ${lib}
-  source /usr/share/zsh/plugins/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh
+  source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.plugin.zsh
 }
 
 # update tty for gpg-agent
