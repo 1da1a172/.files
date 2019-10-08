@@ -45,6 +45,7 @@ input "1739:31251:DLL07BF:01_06CB:7A13_Touchpad" {
     dwt enabled
     tap_button_map lmr
 }
+seat * hide_cursor 5000
 
 ### Key bindings
 #
