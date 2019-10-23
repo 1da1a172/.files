@@ -18,6 +18,11 @@ set $browser chromium
 set $spartan074 '--profile-directory=Profile 1'
 set $waldrep '--profile-directory=Profile 2'
 
+### Run on start
+#
+# Notification server
+exec mako
+
 ### Window decoration
 default_border pixel 1
 default_floating_border pixel 1
