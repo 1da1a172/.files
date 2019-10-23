@@ -72,7 +72,18 @@ seat * hide_cursor 5000
     bindsym Ctrl+$mod+l exec swaylock -e -c 303030
 
     # password manager
-    # bindsym $mod+p exec passmenu
+    bindsym $mod+p exec passmenu
+
+    # MAC stuff
+    bindsym $mod+m exec mac-formats
+    bindsym $mod+Shift+m exec mymac
+
+    # Screenshot
+    bindsym Print exec grim-bemenu
+
+    # Adjust brightness
+    bindsym XF86MonBrightnessUp exec bl max
+    bindsym XF86MonBrightnessDown exec bl min
 
 # other
     # kill focused window
