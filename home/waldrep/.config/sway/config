@@ -2,6 +2,11 @@
 
 ### Variables
 #
+# Outputs
+set $edp 'Sharp Corporation 0x1476 0x00000000'
+set $deskh 'Dell Inc. DELL P2715Q X24K1737773L'
+set $deskv 'Dell Inc. DELL P2415Q G3D7F8BM03LB'
+
 # Mod keys
 set $mod Mod1
 set $modp Mod4
@@ -31,9 +36,9 @@ default_floating_border pixel 1
 #
 # man 5 sway-output
 # Monitor setup
-output 'Sharp Corporation 0x1476 0x00000000' position 0,0
-output 'Dell Inc. DELL P2715Q X24K1737773L' position 3840,0
-output 'Dell Inc. DELL P2415Q G3D7F8BM03LB' position 7680,0 transform 270
+output $edp position 0,0
+output $deskh position 3840,0
+output $deskv position 7680,0 transform 270
 # backround
 output * bg '#000000' solid_color
 
