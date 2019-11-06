@@ -39,6 +39,8 @@ default_floating_border pixel 1
 output $edp position 0,0
 output $deskh position 3840,0
 output $deskv position 7680,0 transform 270
+bindswitch --locked --reload lid:on output $edp disable
+bindswitch --locked --reload lid:off output $edp enable
 # backround
 output * bg '#000000' solid_color
 
