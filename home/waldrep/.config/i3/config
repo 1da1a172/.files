@@ -70,7 +70,7 @@ bindsym $mod+q exec qutebrowser
 bindsym $mod+Shift+q kill
 
 # start dmenu
-bindsym $mod+f exec dmenu_run
+bindsym $mod+d exec dmenu_run
 
 # passmenu
 bindsym $mod+p exec passmenu
@@ -98,18 +98,18 @@ bindsym $mod+Shift+Up move up
 bindsym $mod+Shift+Right move right
 
 # split in horizontal orientation (portrait)
-bindsym $mod+g split h
+bindsym $mod+b split h
 
 # split in vertical orientation (landscape)
 bindsym $mod+v split v
 
 # enter fullscreen mode for the focused container
-bindsym $mod+w fullscreen
+bindsym $mod+f fullscreen
 
 # change container layout (stacked, tabbed, toggle split)
-bindsym $mod+u layout stacking
-bindsym $mod+i layout tabbed
-bindsym $mod+o layout toggle split
+bindsym $mod+s layout stacking
+bindsym $mod+w layout tabbed
+bindsym $mod+e layout toggle split
 
 # toggle tiling / floating
 bindsym $mod+Shift+x floating toggle
