@@ -70,7 +70,7 @@ seat * hide_cursor 5000
     bindsym Ctrl+$mod+Return exec st-app
 
     # personal browser
-    bindsym $mod+space exec firefox
+    bindsym $mod+space exec $browser $spartan074
 
     # work browser
     bindsym $modp+space exec $browser $waldrep
