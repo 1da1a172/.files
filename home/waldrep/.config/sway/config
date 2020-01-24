@@ -92,6 +92,10 @@ seat * hide_cursor 5000
     bindsym XF86MonBrightnessUp exec bl max
     bindsym XF86MonBrightnessDown exec bl min
 
+# Notification control
+    bindsym Ctrl+space exec makoctl dismiss
+    bindsym Ctrl+Shift+space exec makoctl dismiss -a
+
 # other
     # kill focused window
     bindsym $mod+Shift+q kill
