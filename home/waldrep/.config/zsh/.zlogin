@@ -12,7 +12,7 @@ typeset -x CARGOPATH="${HOME}/.cargo"
 typeset -x PATH="${USER_BIN}:${HOME}/scrap:${PATH}:${GOPATH}/bin:${CARGOPATH}/bin"
 
 # default apps
-typeset -x BROWSER=chromium
+typeset -x BROWSER='/usr/bin/chromium'
 typeset -x TERMINAL='/usr/bin/alacritty'
 typeset -x VISUAL=/usr/bin/vim
 typeset -x GIT_SSH=/usr/bin/ssh
