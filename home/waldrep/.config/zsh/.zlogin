@@ -42,3 +42,4 @@ typeset -x KEYTIMEOUT=1
 typeset -x GPG_TTY="${TTY}"
 typeset -x VDPAU_DRIVER="i695"
 typeset -x QT_QPA_PLATFORM=wayland-egl
+typeset -x MOZ_ENABLE_WAYLAND=1
