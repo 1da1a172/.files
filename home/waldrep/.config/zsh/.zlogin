@@ -14,8 +14,8 @@ typeset -x PATH="${USER_BIN}:${HOME}/scrap:${PATH}:${GOPATH}/bin:${CARGOPATH}/bi
 # default apps
 typeset -x BROWSER='/usr/bin/chromium'
 typeset -x TERMINAL='/usr/bin/alacritty'
-typeset -x VISUAL=/usr/bin/vim
-typeset -x GIT_SSH=/usr/bin/ssh
+typeset -x VISUAL='/usr/bin/vim'
+typeset -x GIT_SSH='/usr/bin/ssh'
 
 # make apps use XDG_DATA_HOME
 typeset -x GNUPGHOME="${XDG_DATA_HOME}/gnupg"
@@ -40,6 +40,6 @@ typeset -x FT2_SUBPIXEL_HINTING=1
 # misc
 typeset -x KEYTIMEOUT=1
 typeset -x GPG_TTY="${TTY}"
-typeset -x VDPAU_DRIVER="i695"
-typeset -x QT_QPA_PLATFORM=wayland-egl
+typeset -x VDPAU_DRIVER='i695'
+typeset -x QT_QPA_PLATFORM='wayland-egl'
 typeset -x MOZ_ENABLE_WAYLAND=1
