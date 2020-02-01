@@ -16,7 +16,7 @@ set $down j
 set $up k
 set $right l
 # Default apps
-set $term jp-terminal
+set $term /usr/bin/alacritty
 set $menu dmenu_path | dmenu | xargs swaymsg exec --
 set $browser chromium
 # browser profiles
@@ -66,8 +66,8 @@ seat * hide_cursor 5000
 # Launching stuff
     # terminal
     bindsym $mod+Return exec $term
-    bindsym $mod+Shift+Return exec st-attach
-    bindsym Ctrl+$mod+Return exec st-app
+    bindsym $mod+Shift+Return exec term-attach
+    bindsym Ctrl+$mod+Return exec term-app
 
     # personal browser
     bindsym $mod+space exec $browser $spartan074

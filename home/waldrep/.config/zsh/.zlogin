@@ -13,7 +13,7 @@ typeset -x PATH="${USER_BIN}:${HOME}/scrap:${PATH}:${GOPATH}/bin:${CARGOPATH}/bi
 
 # default apps
 typeset -x BROWSER=chromium
-typeset -x TERMINAL="${USER_BIN}/jp-terminal"
+typeset -x TERMINAL='/usr/bin/alacritty'
 typeset -x VISUAL=/usr/bin/vim
 typeset -x GIT_SSH=/usr/bin/ssh
 
