@@ -8,7 +8,8 @@ typeset -x XDG_DATA_HOME="${HOME}/.local/share"
 typeset -x USER_LIB="${HOME}/.local/lib"
 typeset -x USER_BIN="${HOME}/.local/bin"
 typeset -x GOPATH="${HOME}/build/go"
-typeset -x PATH="${USER_BIN}:${HOME}/scrap:${PATH}:${GOPATH}/bin"
+typeset -x CARGOPATH="${HOME}/.cargo"
+typeset -x PATH="${USER_BIN}:${HOME}/scrap:${PATH}:${GOPATH}/bin:${CARGOPATH}/bin"
 
 # default apps
 typeset -x BROWSER=chromium
