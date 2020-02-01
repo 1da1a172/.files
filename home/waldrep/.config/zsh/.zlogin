@@ -30,6 +30,8 @@ typeset -x LESSHISTFILE="${XDG_CONFIG_HOME}/less/history"
 typeset -x LESSKEY="${XDG_CONFIG_HOME}/less/keys"
 
 # make java usable
+typeset -x CLASSPATH='.'
+for jar (/usr/share/java/*.jar) CLASSPATH+=":$jar"
 # See https://wiki.archlinux.org/index.php/Java_Runtime_Environment_fonts
 typeset -x _JAVA_OPTIONS='-Dawt.useSystemAAFontSettings=lcd -Dawt.autoScale=quarter'
 typeset -x JAVA_FONTS='/usr/share/fonts/TTF'
