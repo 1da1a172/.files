@@ -79,7 +79,7 @@ seat * hide_cursor 5000
     bindsym Ctrl+$mod+l exec swaylock -e -c 303030
 
     # password manager
-    bindsym $mod+p exec passmenu
+    bindsym $mod+p exec passway
 
     # MAC stuff
     bindsym $mod+m exec mac-formats
