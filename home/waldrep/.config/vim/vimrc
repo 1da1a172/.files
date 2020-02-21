@@ -36,4 +36,3 @@ augroup END
 " highlight trailing whitespace
 highlight ExtraWhitespace ctermbg=red
 match ExtraWhitespace /\s\+$/
-"
