@@ -1,5 +1,5 @@
 " ir_black color scheme
-" More at: http://blog.infinitered.com
+" More at: https://github.com/twerth/dotfiles/tree/master/etc/vim/colors
 
 
 " ********************************************************************************
