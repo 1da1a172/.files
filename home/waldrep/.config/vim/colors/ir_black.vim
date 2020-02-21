@@ -91,6 +91,9 @@ hi ErrorMsg         guifg=white       guibg=#FF6C60     gui=BOLD      ctermfg=wh
 hi WarningMsg       guifg=white       guibg=#FF6C60     gui=BOLD      ctermfg=white       ctermbg=red         cterm=NONE
 hi LongLineWarning  guifg=NONE        guibg=#371F1C     gui=underline ctermfg=NONE        ctermbg=NONE	      cterm=underline
 
+hi SpellBad         guifg=NONE        guibg=NONE        gui=NONE      ctermfg=000         ctermbg=210         cterm=NONE
+hi SpellCap         guifg=NONE        guibg=NONE        gui=NONE      ctermfg=210         ctermbg=NONE        cterm=underline
+
 " Message displayed in lower left, such as --INSERT--
 hi ModeMsg          guifg=black       guibg=#C6C5FE     gui=BOLD      ctermfg=black       ctermbg=cyan        cterm=BOLD
 
