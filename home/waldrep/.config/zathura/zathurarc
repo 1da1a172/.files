@@ -4,3 +4,4 @@ set recolor-darkcolor  "#dcdcdc"
 set recolor-lightcolor "#303030"
 set recolor-keephue true
 set recolor true
+set sandbox "strict"
