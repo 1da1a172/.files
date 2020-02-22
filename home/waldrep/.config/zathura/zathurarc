@@ -1,5 +1,11 @@
 set font "Anonymous Pro Regular 20"
 set guioptions ''
+set completion-bg "#222222"
+set completion-fg "#BBBBBB"
+set inputbar-bg "#222222"
+set inputbar-fg "#BBBBBB"
+set completion-highlight-bg "#005577"
+set completion-highlight-fg "#EEEEEE"
 set recolor-darkcolor  "#dcdcdc"
 set recolor-lightcolor "#303030"
 set recolor-keephue true
