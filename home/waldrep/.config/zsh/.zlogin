@@ -9,7 +9,12 @@ typeset -x USER_LIB="${HOME}/.local/lib"
 typeset -x USER_BIN="${HOME}/.local/bin"
 typeset -x GOPATH="${HOME}/build/go"
 typeset -x CARGOPATH="${HOME}/.cargo"
-typeset -x PATH="${HOME}/scrap:${USER_BIN}:${GOPATH}/bin:${CARGOPATH}/bin:${PATH}"
+typeset -x RUBYPATH="${HOME}/.gem/ruby/$(ruby --version | cut -d ' ' -f 2 | cut -d 'p' -f 1)"
+PATH="${RUBYPATH}/bin:${PATH}"
+PATH="${CARGOPATH}/bin:${PATH}"
+PATH="${GOPATH}/bin:${PATH}"
+PATH="${USER_BIN}:${PATH}"
+PATH="${HOME}/scrap:${PATH}"
 
 # default apps
 typeset -x BROWSER='/usr/bin/chromium'
