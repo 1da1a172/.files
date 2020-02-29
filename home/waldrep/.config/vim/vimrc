@@ -19,7 +19,6 @@ set nowrap
 set encoding=utf-8
 set fileencoding=utf-8
 colorscheme ir_black
-hi Folded ctermfg=Grey
 set pastetoggle=<F2>
 " additional latexsuite stuff
 set grepprg=grep\ -nH\ $*
@@ -32,7 +31,3 @@ augroup XML
   autocmd!
   autocmd FileType xml setlocal foldmethod=syntax foldlevelstart=999 foldminlines=0
 augroup END
-
-" highlight trailing whitespace
-highlight ExtraWhitespace ctermbg=red
-match ExtraWhitespace /\s\+$/

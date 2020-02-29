@@ -77,7 +77,7 @@ hi VertSplit        guifg=#202020     guibg=#202020     gui=NONE      ctermfg=da
 hi StatusLine       guifg=#CCCCCC     guibg=#202020     gui=italic    ctermfg=white       ctermbg=darkgray    cterm=NONE
 hi StatusLineNC     guifg=black       guibg=#202020     gui=NONE      ctermfg=blue        ctermbg=darkgray    cterm=NONE
 
-hi Folded           guifg=#a0a8b0     guibg=#384048     gui=NONE      ctermfg=NONE        ctermbg=NONE        cterm=NONE
+hi Folded           guifg=#a0a8b0     guibg=#384048     gui=NONE      ctermfg=245         ctermbg=NONE        cterm=NONE
 hi Title            guifg=#f6f3e8     guibg=NONE        gui=bold      ctermfg=NONE        ctermbg=NONE        cterm=NONE
 hi Visual           guifg=NONE        guibg=#262D51     gui=NONE      ctermfg=NONE        ctermbg=NONE        cterm=REVERSE
 
@@ -94,6 +94,8 @@ hi LongLineWarning  guifg=NONE        guibg=#371F1C     gui=underline ctermfg=NO
 
 hi SpellBad         guifg=NONE        guibg=NONE        gui=NONE      ctermfg=210         ctermbg=NONE        cterm=underline
 hi SpellCap         guifg=NONE        guibg=NONE        gui=NONE      ctermfg=105         ctermbg=NONE        cterm=underline
+
+hi ExtraWhitespace  guifg=NONE        guibg=red         gui=NONE      ctermfg=NONE        ctermbg=red         cterm=NONE
 
 " Message displayed in lower left, such as --INSERT--
 hi ModeMsg          guifg=black       guibg=#C6C5FE     gui=BOLD      ctermfg=black       ctermbg=cyan        cterm=BOLD
@@ -215,3 +217,6 @@ hi  link csXmlTag             Keyword
 
 
 " Special for PHP
+
+" Special ExtraWhitespace
+match ExtraWhitespace /\s\+$/
