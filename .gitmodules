@@ -1,0 +1,3 @@
+[submodule "home/waldrep/.config/vim/bundle/vim-racket"]
+	path = home/waldrep/.config/vim/bundle/vim-racket
+	url = https://github.com/wlangstroth/vim-racket.git
