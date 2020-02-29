@@ -216,7 +216,5 @@ hi link javaScriptNumber      Number
 hi  link csXmlTag             Keyword
 
 
-" Special for PHP
-
-" Special ExtraWhitespace
+" Highlight trailing whitespace
 match ExtraWhitespace /\s\+$/
