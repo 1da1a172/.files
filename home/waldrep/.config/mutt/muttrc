@@ -35,9 +35,11 @@ set delete
 #unset confirmappend
 #unset mark_old
 
-# display method
+# index display
 set sort = 'reverse-threads'
 set sort_aux = 'last-date-received'
+set date_format = "%Y-%b-%d"
+set index_format = "[%Z] %D %-20.20F %s"
 
 # account
 set realname = "Jonathan Waldrep"
