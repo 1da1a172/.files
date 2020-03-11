@@ -49,7 +49,6 @@ set envelope_from
 
 # Preferences
 bind editor <space> noop # allows spaces in mailbox names
-macro index,pager y "<save-message>=[Gmail]/All Mail<enter><enter>" "Archive"
 set editor = 'vim -c "set spell spelllang=en_us"'
 #bind index G imap-fetch-mail
 set signature = "~/.config/mutt/signature"
