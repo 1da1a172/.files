@@ -65,7 +65,7 @@ seat * hide_cursor 5000
 #
 # Launching stuff
     # terminal
-    bindsym $mod+Return exec $term
+    bindsym $mod+Return exec term-new
     bindsym $mod+Shift+Return exec term-attach
     bindsym Ctrl+$mod+Return exec term-app
 
