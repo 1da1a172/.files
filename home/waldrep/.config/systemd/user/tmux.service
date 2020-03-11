@@ -1,0 +1,10 @@
+[Unit]
+Description = Start tmux server
+
+[Service]
+Type = forking
+ExecStart = /usr/bin/tmux -f %h/.config/tmux/tmux.conf start-server
+ExecStop = /usr/bin/tmux kill-server
+
+[Install]
+WantedBy = default.target
