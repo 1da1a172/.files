@@ -1,5 +1,5 @@
 [Unit]
-Description = Start tmux server
+Description = tmux server
 
 [Service]
 Type = forking
