@@ -38,7 +38,7 @@ set delete
 # index display
 set sort = 'reverse-threads'
 set sort_aux = 'last-date-received'
-set date_format = "%Y-%b-%d"
+set date_format = "%F %T"
 set index_format = "[%Z] %D %-20.20F %s"
 
 # account
