@@ -13,6 +13,7 @@ autocmd Filetype tex setlocal colorcolumn=81 spelllang=en spell
 autocmd Filetype dot setlocal noexpandtab sts=8 sw=8 colorcolumn=81 autoindent
 autocmd Filetype python setlocal expandtab sts=4 sw=4 colorcolumn=81
 autocmd Filetype json setlocal foldmethod=syntax
+autocmd Filetype go setlocal noexpandtab sts=8 sw=8 colorcolumn=81
 au BufRead,BufNewFile *.g4 set filetype=antlr4
 autocmd Filetype antlr4 setlocal noexpandtab sts=8 sw=8 colorcolumn=81 autoindent
 set nowrap
