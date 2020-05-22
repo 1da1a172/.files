@@ -15,8 +15,6 @@ bindkey -v
 # It is standard to use '$' for a non-root user. Not '%'. C'mon grml...
 grml_prompt_token_default[percent]='$ '
 
-# standard aliases
-alias vpn='pass waldrep@vt.edu/netadmin | head -n 1 | sudo openconnect -u waldrep --passwd-on-stdin --protocol=pulse https://vpn.nis.vt.edu/nis'
 # suffix aliases
 alias -s pdf="zathura --fork"
 alias -s zsh=vim
