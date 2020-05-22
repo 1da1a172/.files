@@ -182,83 +182,299 @@ font:
 # If `true`, bold text is drawn using the bright color variants.
 #draw_bold_text_with_bright_colors: true
 
-# Colors (Tomorrow Night Bright)
-colors:
-  # Default colors
-  primary:
-    background: '0x303030'
-    foreground: '0xdcdcdc'
-
-    # Bright and dim foreground colors
-    #
-    # The dimmed foreground color is calculated automatically if it is not present.
-    # If the bright foreground color is not set, or `draw_bold_text_with_bright_colors`
-    # is `false`, the normal foreground color will be used.
-    #dim_foreground: '0x9a9a9a'
-    #bright_foreground: '0xffffff'
-
-  # Cursor colors
+# Color schemes
+schemes:
   #
-  # Colors which should be used to draw the terminal cursor. If these are unset,
-  # the cursor color will be the inverse of the cell color.
-  #cursor:
-  #  text: '0x000000'
-  #  cursor: '0xffffff'
+  # Colors (Ayu Dark)
+  Ayu: &ayu
+    # Default colors
+    primary:
+      background: '#0A0E14'
+      foreground: '#B3B1AD'
 
-  # Selection colors
-  #
-  # Colors which should be used to draw the selection area. If selection
-  # background is unset, selection color will be the inverse of the cell colors.
-  # If only text is unset the cell text color will remain the same.
-  #selection:
-  #  text: '0xeaeaea'
-  #  background: '0x404040'
+    # Normal colors
+    normal:
+      black:   '#01060E'
+      red:     '#EA6C73'
+      green:   '#91B362'
+      yellow:  '#F9AF4F'
+      blue:    '#53BDFA'
+      magenta: '#FAE994'
+      cyan:    '#90E1C6'
+      white:   '#C7C7C7'
 
-  # Normal colors
-  normal:
-    black:   '0x101010'
-    red:     '0xb05050'
-    green:   '0x60b48a'
-    yellow:  '0xdfaf8f'
-    blue:    '0x506070'
-    magenta: '0xdc8cc3'
-    cyan:    '0x8cd0d3'
-    white:   '0xdcdcdc'
+    # Bright colors
+    bright:
+      black:   '#686868'
+      red:     '#F07178'
+      green:   '#C2D94C'
+      yellow:  '#FFB454'
+      blue:    '#59C2FF'
+      magenta: '#FFEE99'
+      cyan:    '#95E6CB'
+      white:   '#FFFFFF'
 
-  # Bright colors
-  bright:
-    black:   '0x707070'
-    red:     '0xdca3a3'
-    green:   '0xc3e1ac'
-    yellow:  '0xf0dfaf'
-    blue:    '0x94bff3'
-    magenta: '0xec93d3'
-    cyan:    '0x93e0e3'
-    white:   '0xffffff'
+  #
+  # Base16 (Default dark)
+  Base16: &b16
+    # Default colors
+    primary:
+      background: '#181818'
+      foreground: '#d8d8d8'
 
-  # Dim colors
-  #
-  # If the dim colors are not set, they will be calculated automatically based
-  # on the `normal` colors.
-  #dim:
-  #  black:   '0x000000'
-  #  red:     '0x8c3336'
-  #  green:   '0x7a8530'
-  #  yellow:  '0x97822e'
-  #  blue:    '0x506d8f'
-  #  magenta: '0x80638e'
-  #  cyan:    '0x497e7a'
-  #  white:   '0x9a9a9a'
+    # Colors the cursor will use if `custom_cursor_colors` is true
+    #cursor:
+      text: '#181818'
+      cursor: '#d8d8d8'
 
-  # Indexed Colors
+    # Normal colors
+    normal:
+      black:   '#181818'
+      red:     '#ab4642'
+      green:   '#a1b56c'
+      yellow:  '#f7ca88'
+      blue:    '#7cafc2'
+      magenta: '#ba8baf'
+      cyan:    '#86c1b9'
+      white:   '#d8d8d8'
+
+    # Bright colors
+    bright:
+      black:   '#585858'
+      red:     '#ab4642'
+      green:   '#a1b56c'
+      yellow:  '#f7ca88'
+      blue:    '#7cafc2'
+      magenta: '#ba8baf'
+      cyan:    '#86c1b9'
+      white:   '#f8f8f8'
+
   #
-  # The indexed colors include all colors from 16 to 256.
-  # When these are not set, they're filled with sensible defaults.
+  # Campbell (Windows 10 default)
+  Campbell: &windows
+    # Default colors
+    primary:
+      background: '#0c0c0c'
+      foreground: '#cccccc'
+
+    # Normal colors
+    normal:
+      black:      '#0c0c0c'
+      red:        '#c50f1f'
+      green:      '#13a10e'
+      yellow:     '#c19c00'
+      blue:       '#0037da'
+      magenta:    '#881798'
+      cyan:       '#3a96dd'
+      white:      '#cccccc'
+
+    # Bright colors
+    bright:
+      black:      '#767676'
+      red:        '#e74856'
+      green:      '#16c60c'
+      yellow:     '#f9f1a5'
+      blue:       '#3b78ff'
+      magenta:    '#b4009e'
+      cyan:       '#61d6d6'
+      white:      '#f2f2f2'
+
   #
-  # Example:
-  #   `- { index: 16, color: '0xff00ff' }`
-  #
-  #indexed_colors: []
+  # Gruvbox (dark medium)
+  Gruvbox: &gruvbox
+    # Default colors
+    primary:
+      # hard contrast
+      background: '#1d2021'
+      # medium contras:
+      #background: '#282828'
+      # soft contrast
+      #background: '#32302f'
+      foreground: '#ebdbb2'
+
+    # Normal colors
+    normal:
+      black:   '#282828'
+      red:     '#cc241d'
+      green:   '#98971a'
+      yellow:  '#d79921'
+      blue:    '#458588'
+      magenta: '#b16286'
+      cyan:    '#689d6a'
+      white:   '#a89984'
+
+    # Bright colors
+    bright:
+      black:   '#928374'
+      red:     '#fb4934'
+      green:   '#b8bb26'
+      yellow:  '#fabd2f'
+      blue:    '#83a598'
+      magenta: '#d3869b'
+      cyan:    '#8ec07c'
+      white:   '#ebdbb2'
+
+  IR Black: &irb
+    # Default colors
+    primary:
+      background: '#000000'
+      foreground: '#ffffff'
+
+    #cursor:
+      #text: '#ffffff'
+      #cursor: '#ffffff'
+
+    # Normal colors
+    normal:
+      black:   '#4e4e4e'
+      red:     '#ff6c60'
+      green:   '#a8ff60'
+      yellow:  '#ffffb6'
+      blue:    '#96cbfe'
+      magenta: '#ff73fd'
+      cyan:    '#c6c5fe'
+      white:   '#eeeeee'
+
+    # Bright colors
+    bright:
+      black:   '#7c7c7c'
+      red:     '#ffb6b0'
+      green:   '#ceffab'
+      yellow:  '#ffffcb'
+      blue:    '#b5dcfe'
+      magenta: '#ff9cfe'
+      cyan:    '#dfdffe'
+      white:   '#ffffff'
+
+  IR Dark: &ird
+    # Default colors
+    primary:
+      background: '#232323'
+      foreground: '#ffffff'
+
+    #cursor:
+      #text: '#ffffff'
+      #cursor: '#ffffff'
+
+    # Normal colors
+    normal:
+      black:   '#4e4e4e'
+      red:     '#ff6c60'
+      green:   '#a8ff60'
+      yellow:  '#ffffb6'
+      blue:    '#96cbfe'
+      magenta: '#ff73fd'
+      cyan:    '#c6c5fe'
+      white:   '#eeeeee'
+
+    # Bright colors
+    bright:
+      black:   '#7c7c7c'
+      red:     '#ffb6b0'
+      green:   '#ceffab'
+      yellow:  '#ffffcb'
+      blue:    '#b5dcfe'
+      magenta: '#ff9cfe'
+      cyan:    '#dfdffe'
+      white:   '#ffffff'
+
+  # https://github.com/alacritty/alacritty/wiki/Color-schemes
+  # https://github.com/dikiaap/dotfiles
+  Oxide: &oxide
+    # Default colors
+    primary:
+      background: '#212121'
+      foreground: '#c0c5ce'
+      bright_foreground: '#f3f4f5'
+
+    #cursor:
+      text: '#212121'
+      cursor: '#c0c5ce'
+
+    # Normal colors
+    normal:
+      black:   '#212121'
+      red:     '#e57373'
+      green:   '#a6bc69'
+      yellow:  '#fac863'
+      blue:    '#6699cc'
+      magenta: '#c594c5'
+      cyan:    '#5fb3b3'
+      white:   '#c0c5ce'
+
+    # Bright colors
+    bright:
+      black:   '#5c5c5c'
+      red:     '#e57373'
+      green:   '#a6bc69'
+      yellow:  '#fac863'
+      blue:    '#6699cc'
+      magenta: '#c594c5'
+      cyan:    '#5fb3b3'
+      white:   '#f3f4f5'
+
+  Solarized Dark: &solar
+    # Default colors
+    primary:
+      background: '#002b36' # base03
+      foreground: '#839496' # base0
+
+    # Cursor colors
+    cursor:
+      text:   '#002b36' # base03
+      cursor: '#839496' # base0
+
+    # Normal colors
+    normal:
+      black:   '#073642' # base02
+      red:     '#dc322f' # red
+      green:   '#859900' # green
+      yellow:  '#b58900' # yellow
+      blue:    '#268bd2' # blue
+      magenta: '#d33682' # magenta
+      cyan:    '#2aa198' # cyan
+      white:   '#eee8d5' # base2
+
+    # Bright colors
+    bright:
+      black:   '#586e75' # base01
+      red:     '#cb4b16' # orange
+      green:   '#586e75' # base01
+      yellow:  '#657b83' # base00
+      blue:    '#839496' # base0
+      magenta: '#6c71c4' # violet
+      cyan:    '#93a1a1' # base1
+      white:   '#fdf6e3' # base3
+
+  waldrep: &waldrep
+    # Default colors
+    primary:
+      background: '0x303030'
+      foreground: '0xdcdcdc'
+    # Normal colors
+    normal:
+      black:   '0x101010'
+      red:     '0xb05050'
+      green:   '0x60b48a'
+      yellow:  '0xdfaf8f'
+      blue:    '0x6ba8f3'
+      magenta: '0xdc8cc3'
+      cyan:    '0x8cd0d3'
+      white:   '0xdcdcdc'
+
+    # Bright colors
+    bright:
+      black:   '0x707070'
+      red:     '0xdca3a3'
+      green:   '0xc3e1ac'
+      yellow:  '0xf0dfaf'
+      blue:    '0x94bff3'
+      magenta: '0xec93d3'
+      cyan:    '0x93e0e3'
+      white:   '0xffffff'
+
+colors: *oxide
+#custom_cursor_colors: false
 
 # Visual Bell
 #
