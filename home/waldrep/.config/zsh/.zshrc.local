@@ -19,11 +19,11 @@ grml_prompt_token_default[percent]='$ '
 alias -s pdf="zathura --fork"
 alias -s zsh=vim
 alias -s txt=vim
-alias -s png="imv -s"
-alias -s jpg="imv -s"
-alias -s png="imv -s"
-alias -s gif="imv -s"
-alias -s bmp="imv -s"
+alias -s png="imv -s none"
+alias -s jpg="imv -s none"
+alias -s png="imv -s none"
+alias -s gif="imv -s none"
+alias -s bmp="imv -s none"
 
 # Deep dirs
 hash -d scrot=~/pictures/screenshots
