@@ -58,6 +58,11 @@ set crypt_replyencrypt = yes
 source ~/.config/mutt/colors.jp
 set smart_wrap = yes
 
+# Deal with HTML parts
+set mailcap_path = ~/.config/mutt/mailcap
+auto_view text/html
+alternative_order text/plain text/html
+
 # Contacts
 #set query_command = "goobook query %s"
 #macro index,pager a "<pipe-message>goobook add<return>" "add sender to Google contacts"
