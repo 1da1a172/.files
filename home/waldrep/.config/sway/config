@@ -132,6 +132,18 @@ seat * hide_cursor 5000
     bindsym $mod+Shift+Down move down
     bindsym $mod+Shift+Up move up
     bindsym $mod+Shift+Right move right
+
+    # move the focused _worksapce_ with the same, but add Ctrl
+    bindsym $mod+Ctrl+Shift+$left move workspace to output left
+    bindsym $mod+Ctrl+Shift+$right move workspace to output right
+    bindsym $mod+Ctrl+Shift+$up move workspace to output up
+    bindsym $mod+Ctrl+Shift+$down move workspace to output down
+    # ditto, with arrow keys
+    bindsym $mod+Ctrl+Shift+Left move workspace to output left
+    bindsym $mod+Ctrl+Shift+Right move workspace to output right
+    bindsym $mod+Ctrl+Shift+Up move workspace to output up
+    bindsym $mod+Ctrl+Shift+Down move workspace to output down
+
 #
 # Workspaces:
 #
@@ -177,6 +189,27 @@ seat * hide_cursor 5000
     bindsym $modp+Shift+8 move container to workspace 18
     bindsym $modp+Shift+9 move container to workspace 19
     bindsym $modp+Shift+0 move container to workspace 20
+    # bind workspace to expected output
+    workspace 1 output $deskh $edp
+    workspace 2 output $deskh $edp
+    workspace 3 output $deskh $edp
+    workspace 4 output $deskh $edp
+    workspace 5 output $deskh $edp
+    workspace 6 output $deskh $edp
+    workspace 7 output $deskh $edp
+    workspace 8 output $deskh $edp
+    workspace 9 output $deskh $edp
+    workspace 10 output $deskh $edp
+    workspace 11 output $deskv $edp
+    workspace 12 output $deskv $edp
+    workspace 13 output $deskv $edp
+    workspace 14 output $deskv $edp
+    workspace 15 output $deskv $edp
+    workspace 16 output $deskv $edp
+    workspace 17 output $deskv $edp
+    workspace 18 output $deskv $edp
+    workspace 19 output $deskv $edp
+    workspace 20 output $deskv $edp
 #
 # Layout stuff:
 #
