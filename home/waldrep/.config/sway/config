@@ -73,10 +73,10 @@ seat * hide_cursor 5000
     bindsym Ctrl+$mod+Return exec term-app
 
     # personal browser
-    bindsym $mod+space exec $browser $spartan074
+    bindsym $mod+space exec firefox
 
     # work browser
-    bindsym $modp+space exec $browser $waldrep
+    bindsym $modp+space exec chromium '--profile-directory=Profile 2'
 
     # lock screen
     bindsym Ctrl+$mod+l exec swaylock -e -c 303030
