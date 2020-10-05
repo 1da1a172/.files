@@ -27,7 +27,7 @@ set $disp2 DP2-2
 #set $disp2 HDMI1
 
 # Set browser profiles
-set $browser 'chromium'
+set $browser 'firefox'
 set $spartan074 '--profile-directory=Profile 1'
 set $waldrep '--profile-directory=Profile 2'
 
@@ -62,9 +62,8 @@ bindsym $mod+Shift+Return exec st-attach
 bindsym Ctrl+$mod+Return exec st-app
 
 # start a browser
-bindsym $mod+space exec $browser $spartan074
-bindsym $modp+space exec $browser $waldrep
-bindsym $mod+q exec qutebrowser
+bindsym $mod+space exec $browser
+bindsym $modp+space exec chromium $waldrep
 
 # kill focused window
 bindsym $mod+Shift+q kill
