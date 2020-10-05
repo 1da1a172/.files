@@ -29,8 +29,8 @@ typeset -x PASSWORD_STORE_DIR="${XDG_DATA_HOME}/password-store"
 # make apps use XDG_CONFIG_HOME
 typeset -x DOT_SAGE="${XDG_CONFIG_HOME}/sage"
 typeset -x GIMP2_DIRECTORY="${XDG_CONFIG_HOME}/gimp"
-typeset -x VIMINIT='let $MYVIMRC="$XDG_CONFIG_HOME/vim/vimrc" | source $MYVIMRC'
 typeset -x VIMDOTDIR="${XDG_CONFIG_HOME}/vim"
+typeset -x VIMINIT="source $VIMDOTDIR/vimrc"
 typeset -x LESSHISTFILE="${XDG_CONFIG_HOME}/less/history"
 typeset -x LESSKEY="${XDG_CONFIG_HOME}/less/keys"
 
