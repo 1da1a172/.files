@@ -53,7 +53,7 @@ input "1:1:AT_Translated_Set_2_keyboard" {
 input "1133:8208:Logitech_K800" {
     xkb_options caps:escape
 }
-# Touchpad
+# Touchpad / mouse
 input "1739:31251:DLL07BF:01_06CB:7A13_Touchpad" {
     tap enabled
     dwt enabled
