@@ -63,6 +63,6 @@ enabled=true
 outtype=true
 
 [connection]
-account=vt
+account=n3pb
 reconnect=10
 tls.certpath=/etc/ssl/certs
