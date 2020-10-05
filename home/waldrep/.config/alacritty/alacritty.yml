@@ -503,7 +503,7 @@ schemes:
       cyan:    '0x93e0e3'
       white:   '0xffffff'
 
-colors: *oxide
+colors: *gruvbox
 custom_cursor_colors: true
 
 # Visual Bell
