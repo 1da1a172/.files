@@ -14,7 +14,6 @@ intype=true
 
 theme=original
 
-titlebar.show=true
 
 beep=true
 flash=false
@@ -48,6 +47,8 @@ time.private=%H:%M:%S
 time.xmlconsole=%H:%M:%S
 
 tls.show=true
+
+wintitle.show=true
 
 [logging]
 chlog=true
