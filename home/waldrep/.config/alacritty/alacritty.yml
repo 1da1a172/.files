@@ -223,7 +223,7 @@ schemes:
       foreground: '#d8d8d8'
 
     # Colors the cursor will use if `custom_cursor_colors` is true
-    #cursor:
+    cursor:
       text: '#181818'
       cursor: '#d8d8d8'
 
@@ -350,9 +350,9 @@ schemes:
       background: '#000000'
       foreground: '#ffffff'
 
-    #cursor:
+    cursor:
       #text: '#ffffff'
-      #cursor: '#ffffff'
+      cursor: '#ffffff'
 
     # Normal colors
     normal:
@@ -382,9 +382,9 @@ schemes:
       background: '#232323'
       foreground: '#ffffff'
 
-    #cursor:
+    cursor:
       #text: '#ffffff'
-      #cursor: '#ffffff'
+      cursor: '#ffffff'
 
     # Normal colors
     normal:
@@ -417,7 +417,7 @@ schemes:
       foreground: '#c0c5ce'
       bright_foreground: '#f3f4f5'
 
-    #cursor:
+    cursor:
       text: '#212121'
       cursor: '#c0c5ce'
 
@@ -504,7 +504,7 @@ schemes:
       white:   '0xffffff'
 
 colors: *oxide
-#custom_cursor_colors: false
+custom_cursor_colors: true
 
 # Visual Bell
 #
