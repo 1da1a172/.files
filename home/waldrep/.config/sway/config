@@ -71,7 +71,7 @@ seat * hide_cursor 5000
     bindsym $mod+space exec firefox
 
     # work browser
-    bindsym $modp+space exec chromium '--profile-directory=Profile 2'
+    bindsym $modp+space exec chromium --enable-features=UseOzonePlatform --ozone-platform=wayland '--profile-directory=Profile 2'
 
     # lock screen
     bindsym Ctrl+$mod+l exec swaylock -e -c 303030
