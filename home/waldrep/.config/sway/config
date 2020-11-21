@@ -18,10 +18,6 @@ set $right l
 # Default apps
 set $term /usr/bin/alacritty
 set $menu dmenu_path | dmenu | xargs swaymsg exec --
-set $browser chromium
-# browser profiles
-set $spartan074 '--profile-directory=Profile 1'
-set $waldrep '--profile-directory=Profile 2'
 
 ### Run on start
 #
