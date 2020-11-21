@@ -22,7 +22,7 @@ order += "battery 0"
 order += "tztime local"
 
 path_exists VPN {
-    path = "/sys/devices/virtual/net/tun0"
+    path = "/sys/devices/virtual/net/oc0"
 }
 
 ethernet _first_ {
