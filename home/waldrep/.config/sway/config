@@ -19,6 +19,13 @@ set $right l
 set $term /usr/bin/alacritty
 set $menu dmenu_path | dmenu | xargs swaymsg exec --
 
+### Window fixes
+#
+# Firefox
+for_window [title="Firefox - Sharing Indicator"] floating enable
+for_window [title="Firefox - Sharing Indicator"] nofocus
+#for_window [title="Firefox - Sharing Indicator"] kill;
+
 ### Run on start
 #
 # Notification server
