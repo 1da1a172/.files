@@ -150,6 +150,7 @@ seat * hide_cursor 5000
 # Workspaces:
 #
     # switch to workspace
+    bindsym $mod+0 workspace 0
     bindsym $mod+1 workspace 1
     bindsym $mod+2 workspace 2
     bindsym $mod+3 workspace 3
@@ -159,7 +160,7 @@ seat * hide_cursor 5000
     bindsym $mod+7 workspace 7
     bindsym $mod+8 workspace 8
     bindsym $mod+9 workspace 9
-    bindsym $mod+0 workspace 10
+    bindsym $modp+0 workspace 10
     bindsym $modp+1 workspace 11
     bindsym $modp+2 workspace 12
     bindsym $modp+3 workspace 13
@@ -169,8 +170,8 @@ seat * hide_cursor 5000
     bindsym $modp+7 workspace 17
     bindsym $modp+8 workspace 18
     bindsym $modp+9 workspace 19
-    bindsym $modp+0 workspace 20
     # move focused container to workspace
+    bindsym $mod+Shift+0 move container to workspace 0
     bindsym $mod+Shift+1 move container to workspace 1
     bindsym $mod+Shift+2 move container to workspace 2
     bindsym $mod+Shift+3 move container to workspace 3
@@ -180,7 +181,7 @@ seat * hide_cursor 5000
     bindsym $mod+Shift+7 move container to workspace 7
     bindsym $mod+Shift+8 move container to workspace 8
     bindsym $mod+Shift+9 move container to workspace 9
-    bindsym $mod+Shift+0 move container to workspace 10
+    bindsym $modp+Shift+0 move container to workspace 10
     bindsym $modp+Shift+1 move container to workspace 11
     bindsym $modp+Shift+2 move container to workspace 12
     bindsym $modp+Shift+3 move container to workspace 13
@@ -190,7 +191,6 @@ seat * hide_cursor 5000
     bindsym $modp+Shift+7 move container to workspace 17
     bindsym $modp+Shift+8 move container to workspace 18
     bindsym $modp+Shift+9 move container to workspace 19
-    bindsym $modp+Shift+0 move container to workspace 20
     # bind workspace to expected output
     workspace 1 output $deskh $edp
     workspace 2 output $deskh $edp
