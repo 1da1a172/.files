@@ -192,6 +192,7 @@ seat * hide_cursor 5000
     bindsym $modp+Shift+8 move container to workspace 18
     bindsym $modp+Shift+9 move container to workspace 19
     # bind workspace to expected output
+    workspace 0 output $deskh $edp
     workspace 1 output $deskh $edp
     workspace 2 output $deskh $edp
     workspace 3 output $deskh $edp
@@ -201,7 +202,7 @@ seat * hide_cursor 5000
     workspace 7 output $deskh $edp
     workspace 8 output $deskh $edp
     workspace 9 output $deskh $edp
-    workspace 10 output $deskh $edp
+    workspace 10 output $deskv $edp
     workspace 11 output $deskv $edp
     workspace 12 output $deskv $edp
     workspace 13 output $deskv $edp
@@ -211,7 +212,6 @@ seat * hide_cursor 5000
     workspace 17 output $deskv $edp
     workspace 18 output $deskv $edp
     workspace 19 output $deskv $edp
-    workspace 20 output $deskv $edp
 #
 # Layout stuff:
 #
