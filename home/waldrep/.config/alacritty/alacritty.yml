@@ -283,9 +283,7 @@ schemes:
   Gruvbox: &gruvbox
     # Default colors
     primary:
-      background: '#1d2021' # hard constrast
-     #background: '#282828' # medium contrast
-     #background: '#32302f' # soft contrast
+      background: '#1d2021'
       foreground: '#ebdbb2'
 
     # Normal colors
