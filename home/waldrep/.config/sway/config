@@ -29,11 +29,6 @@ for_window [title="Firefox - Sharing Indicator"] floating enable
 for_window [title="Firefox - Sharing Indicator"] nofocus
 #for_window [title="Firefox - Sharing Indicator"] kill;
 
-### Run on start
-#
-# Notification server
-exec mako
-
 ### Window decoration
 default_border pixel 1
 default_floating_border pixel 1
