@@ -11,7 +11,7 @@ set ssl_verify_dates = yes
 set ssl_verify_host = yes
 set mail_check = 10
 unset ssl_usesystemcerts
-set certificate_file = "$XDG_CONFIG_HOME/mutt/certs/certificates"
+set certificate_file = "$XDG_CONFIG_HOME/mutt/certs/GTS_Root_R1.pem"
 set timeout = 10
 
 # IMAP settings
