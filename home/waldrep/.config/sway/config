@@ -19,7 +19,7 @@ set $down j
 set $up k
 set $right l
 # Default apps
-set $term /usr/bin/alacritty
+set $term term-new
 set $menu dmenu_path | dmenu | xargs swaymsg exec --
 
 ### Window fixes
@@ -73,7 +73,7 @@ seat * hide_cursor 5000
 #
 # Launching stuff
     # terminal
-    bindsym $mod+Return exec term-new
+    bindsym $mod+Return exec $term
     bindsym $mod+Shift+Return exec term-attach
     bindsym Ctrl+$mod+Return exec term-app
 
