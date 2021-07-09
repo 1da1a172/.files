@@ -185,7 +185,7 @@ font:
 # Color schemes
 schemes:
   #
-  # Colors (Ayu Dark)
+  # Ayu Dark
   Ayu: &ayu
     # Default colors
     primary:
@@ -222,7 +222,6 @@ schemes:
       background: '#181818'
       foreground: '#d8d8d8'
 
-    # Colors the cursor will use if `custom_cursor_colors` is true
     cursor:
       text: '#181818'
       cursor: '#d8d8d8'
@@ -280,16 +279,13 @@ schemes:
       white:      '#f2f2f2'
 
   #
-  # Gruvbox (dark medium)
+  # Gruvbox
   Gruvbox: &gruvbox
     # Default colors
     primary:
-      # hard contrast
-      background: '#1d2021'
-      # medium contras:
-      #background: '#282828'
-      # soft contrast
-      #background: '#32302f'
+      background: '#1d2021' # hard constrast
+     #background: '#282828' # medium contrast
+     #background: '#32302f' # soft contrast
       foreground: '#ebdbb2'
 
     # Normal colors
