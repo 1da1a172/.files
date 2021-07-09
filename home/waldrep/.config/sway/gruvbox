@@ -1,0 +1,50 @@
+#
+# Color definition
+#
+
+set $hard   '#1d2021'
+set $medium '#282828'
+set $soft   '#32302f'
+
+set $black   '#282828'
+set $red     '#cc241d'
+set $green   '#98971a'
+set $yellow  '#d79921'
+set $blue    '#458588'
+set $magenta '#b16286'
+set $cyan    '#689d6a'
+set $white   '#a89984'
+
+set $bright_black   '#928374'
+set $bright_red     '#fb4934'
+set $bright_green   '#b8bb26'
+set $bright_yellow  '#fabd2f'
+set $bright_blue    '#83a598'
+set $bright_magenta '#d3869b'
+set $bright_cyan    '#8ec07c'
+set $bright_white   '#ebdbb2'
+
+set $focused_bgcolor $yellow
+set $focused_textcolor $black
+set $focused_indicator $red
+
+set $inactive_bgcolor $medium
+set $inactive_textcolor $yellow
+set $inactive_indicator $green
+
+set $unfocused_bgcolor $hard
+set $unfocused_textcolor $yellow
+set $unfocused_indicator $blue
+
+set $urgent_bgcolor $red
+set $urgent_textcolor $bright_yellow
+set $urgent_indicator $red
+
+#
+# Appearance:
+#
+
+client.focused $focused_bgcolor $focused_bgcolor $focused_textcolor $focused_indicator $focused_bgcolor
+client.focused_inactive $inactive_bgcolor $inactive_bgcolor $inactive_textcolor $inactive_indicator $inactive_bgcolor
+client.unfocused $unfocused_bgcolor $unfocused_bgcolor $unfocused_textcolor $unfocused_indicator $unfocused_bgcolor
+client.urgent $urgent_bgcolor $urgent_bgcolor $urgent_textcolor $urgent_indicator $urgent_bgcolor
