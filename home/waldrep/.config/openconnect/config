@@ -1,0 +1,8 @@
+protocol=pulse
+script=sudo /etc/vpnc/vpnc-script
+no-system-trust
+cafile=/etc/ssl/certs/USERTrust_RSA_Certification_Authority.pem
+user=waldrep
+passwd-on-stdin
+pid-file=/run/user/$UID/openconnect.pid
+interface=oc0
