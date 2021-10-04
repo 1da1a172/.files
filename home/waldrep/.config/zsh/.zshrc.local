@@ -28,6 +28,7 @@ alias -s bmp="imv -s none"
 # Deep dirs
 hash -d scrot=~/pictures/screenshots
 hash -d .home=~/.files/home/waldrep
+hash -d crypto=~/documents/school/math4176
 
 # PERL help
 
