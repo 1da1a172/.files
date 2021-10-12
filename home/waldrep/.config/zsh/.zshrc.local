@@ -29,6 +29,7 @@ alias -s bmp="imv -s none"
 hash -d scrot=~/pictures/screenshots
 hash -d .home=~/.files/home/waldrep
 hash -d crypto=~/documents/school/math4176
+hash -d do.mo=~/documents/documentation/docs.mobility
 
 # PERL help
 
