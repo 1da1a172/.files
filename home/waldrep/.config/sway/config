@@ -3,6 +3,7 @@
 ### Imports
 include gruvbox
 include firefox
+include zoom.us
 
 ### Variables
 #
