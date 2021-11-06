@@ -2,6 +2,7 @@
 
 ### Imports
 include gruvbox
+include firefox
 
 ### Variables
 #
@@ -21,12 +22,6 @@ set $right l
 # Default apps
 set $term term-new
 set $menu dmenu_path | dmenu | xargs swaymsg exec --
-
-### Window fixes
-#
-# Firefox
-for_window [title="Firefox - Sharing Indicator"] floating enable
-for_window [title="Firefox - Sharing Indicator"] nofocus
 
 ### Window decoration
 default_border pixel 1
