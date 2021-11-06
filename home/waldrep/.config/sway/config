@@ -72,9 +72,6 @@ seat * hide_cursor 5000
     # personal browser
     bindsym $mod+space exec firefox
 
-    # work browser
-    bindsym $modp+space exec chromium
-
     # lock screen
     bindsym Ctrl+$mod+l exec swaylock -e -c 303030
 
