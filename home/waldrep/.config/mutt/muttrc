@@ -16,7 +16,7 @@ set timeout = 10
 
 # IMAP settings
 set imap_user = "waldrep@vt.edu"
-set imap_pass = `pass show waldrep@vt.edu/offlineimap`
+set imap_pass = `pass show waldrep@vt.edu/mutt`
 set header_cache = "~/.cache/mutt/headers"
 set message_cachedir= "~/.cache/mutt/messages"
 
