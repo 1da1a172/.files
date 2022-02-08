@@ -31,6 +31,10 @@ default_border pixel 1
 default_floating_border pixel 1
 hide_edge_borders --i3 smart
 
+### xorg
+for_window [shell="xwayland"] title_format "%title [XWayland]"
+#xwayland disable
+
 ### Output configuration
 #
 # man 5 sway-output
