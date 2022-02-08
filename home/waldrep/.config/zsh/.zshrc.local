@@ -28,7 +28,8 @@ alias -s bmp="imv -s none"
 # Deep dirs
 hash -d scrot=~/pictures/screenshots
 hash -d .home=~/.files/home/waldrep
-hash -d crypto=~/documents/school/math4176
+hash -d sys=~/documents/school/cs3214
+hash -d p1=~sys/projects/p1
 hash -d do.mo=~/documents/documentation/docs.mobility
 
 # vim:filetype=zsh
