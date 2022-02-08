@@ -4,6 +4,7 @@ function () {
   for lib (${HOME}/.local/lib/*.zsh) source ${lib}
   source /usr/share/zsh/plugins/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh
 }
+fpath+="${ZDOTDIR}/zfunc"
 
 # update tty for gpg-agent
 typeset -x +g GPG_TTY="${TTY}"
