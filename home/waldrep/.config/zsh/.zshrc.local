@@ -25,6 +25,7 @@ alias -s jpg="imv -s none"
 alias -s png="imv -s none"
 alias -s gif="imv -s none"
 alias -s bmp="imv -s none"
+alias -s svg="imv -s none"
 
 # Deep dirs
 hash -d scrot=~/pictures/screenshots
