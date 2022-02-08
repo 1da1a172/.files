@@ -1,7 +1,7 @@
 # load libraries
 function () {
   typeset lib
-  for lib (${HOME}/.local/lib/*.zsh) source ${lib}
+  for lib (${USER_LIB}/*.zsh) source ${lib}
   source /usr/share/zsh/plugins/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh
 }
 fpath+="${ZDOTDIR}/zfunc"
