@@ -24,7 +24,28 @@ autocmd Filetype rust setlocal colorcolumn=100
 set nowrap
 set encoding=utf-8
 set fileencoding=utf-8
-colorscheme ir_black
+" 24 bit color
+if (has("termguicolors"))
+  let &t_8f = "\e[38;2;%lu;%lu;%lum"
+  let &t_8b = "\e[48;2;%lu;%lu;%lum"
+  set termguicolors
+endif
+
+" undercurls
+let &t_Cs = "\e[4:3m"
+let &t_Ce = "\e[4:0m"
+
+" theme
+let g:gruvbox_italic = '1'
+let g:gruvbox_contrast_dark = 'hard'
+let g:gruvbox_guisp_fallback = 'fg'
+set background=dark
+colorscheme gruvbox
+
+" Highlight trailing whitespace
+hi ExtraWhitespace ctermbg=1
+match ExtraWhitespace /\s\+$/
+
 set pastetoggle=<F2>
 " additional latexsuite stuff
 set grepprg=grep\ -nH\ $*
