@@ -280,6 +280,7 @@ bindsym $mod+r mode "resize"
 bar {
     position bottom
     status_command i3status
+    font Anonymous Pro Normal 12
     colors {
         statusline $bright_white
         background $hard
