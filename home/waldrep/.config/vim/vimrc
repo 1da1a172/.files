@@ -21,7 +21,7 @@ autocmd Filetype markdown setlocal colorcolumn=81 spell textwidth=80
 autocmd Filetype mail setlocal colorcolumn=73 textwidth=72 spell
 au BufRead,BufNewFile *.g4 set filetype=antlr4
 autocmd Filetype antlr4 setlocal noexpandtab sts=8 sw=8 colorcolumn=81 autoindent
-autocmd Filetype rust setlocal colorcolumn=100
+autocmd Filetype rust setlocal colorcolumn=81
 set nowrap
 set encoding=utf-8
 set fileencoding=utf-8
