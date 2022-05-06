@@ -9,6 +9,7 @@ filetype plugin indent on
 set expandtab softtabstop=2 shiftwidth=2
 autocmd Filetype java setlocal expandtab sts=4 sw=4 colorcolumn=81
 autocmd Filetype c setlocal noexpandtab sts=8 sw=8 colorcolumn=81 textwidth=80
+autocmd Filetype c let ale_linters = {'c': ['clangd']}
 autocmd Filetype cpp setlocal noexpandtab sts=8 sw=8 colorcolumn=81
 autocmd Filetype tex setlocal colorcolumn=81 spelllang=en spell textwidth=80
 autocmd Filetype tex let ale_linters = {'tex': ['chktex']}
