@@ -274,6 +274,12 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 #
+# enable/disble builtin display with lid
+#
+bindswitch lid:on output eDP-1 disable
+bindswitch lid:off output eDP-1 enable
+
+#
 # Status Bar:
 #
 # Read `man 5 sway-bar` for more information about this section.
