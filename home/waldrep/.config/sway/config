@@ -40,7 +40,7 @@ for_window [shell="xwayland"] title_format "%title [XWayland]"
 # man 5 sway-output
 # Monitor setup
 output $edp position 0,2160 scale 1
-output $deskh position 0,1680 scale 1
+output $deskh position 0,0 scale 1
 output $deskh mode 3840x2160
 output $deskv position 3840,0 transform 270 scale 1
 output $deskv mode 3840x2160
