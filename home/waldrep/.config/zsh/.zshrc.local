@@ -30,8 +30,6 @@ alias -s svg="imv -s none"
 # Deep dirs
 hash -d scrot=~/pictures/screenshots
 hash -d .home=~/.files/home/waldrep
-hash -d sys=~/documents/school/cs3214
-hash -d p2=~/documents/school/cs3214/projects/p2
 hash -d do.mo=~/documents/documentation/docs.mobility
 
 # vim:filetype=zsh
